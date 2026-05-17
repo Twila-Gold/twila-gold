@@ -1,4 +1,5 @@
 import { Outlet, Route, Routes } from "react-router-dom";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { MetalPriceTicker } from "@/components/site/MetalPriceTicker";
@@ -43,24 +44,27 @@ function NotFoundPage() {
 
 export default function App() {
   return (
-    <Routes>
-      <Route element={<AppLayout />}>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/gold-jewels" element={<GoldJewelsPage />} />
-        <Route path="/diamond-jewels" element={<DiamondJewelsPage />} />
-        <Route path="/platinum-jewels" element={<PlatinumJewelsPage />} />
-        <Route path="/silver-jewels" element={<SilverJewelsPage />} />
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route element={<AppLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/gold-jewels" element={<GoldJewelsPage />} />
+          <Route path="/diamond-jewels" element={<DiamondJewelsPage />} />
+          <Route path="/platinum-jewels" element={<PlatinumJewelsPage />} />
+          <Route path="/silver-jewels" element={<SilverJewelsPage />} />
 
-        <Route path="/shop" element={<ShopLayout />}>
-          <Route index element={<ShopHub />} />
-          <Route path="ladies" element={<LadiesPage />} />
-          <Route path="gents" element={<GentsPage />} />
-          <Route path="kids" element={<KidsPage />} />
+          <Route path="/shop" element={<ShopLayout />}>
+            <Route index element={<ShopHub />} />
+            <Route path="ladies" element={<LadiesPage />} />
+            <Route path="gents" element={<GentsPage />} />
+            <Route path="kids" element={<KidsPage />} />
+          </Route>
+
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
-
-        <Route path="*" element={<NotFoundPage />} />
-      </Route>
-    </Routes>
+      </Routes>
+    </>
   );
 }
