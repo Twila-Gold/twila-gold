@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { ChevronRight, Play } from "lucide-react";
 import { FullWidthSplitCarousel } from "@/components/site/FullWidthSplitCarousel";
@@ -8,21 +8,7 @@ import { WhyChooseTwila } from "@/components/site/WhyChooseTwila";
 import { CAROUSEL_ITEMS, HERO_VIDEO, HERO_VIDEO_FALLBACK, HERO_VIDEO_SECOND, PRODUCTS, SHOP_AUDIENCES } from "@/data/site";
 import { useReveal } from "@/hooks/use-reveal";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "TWILA — Fine Jewellery in Gold, Diamonds & Platinum" },
-      {
-        name: "description",
-        content:
-          "Heirloom-grade fine jewellery. Explore TWILA's curated collections in 22K gold, certified diamonds, platinum and silver.",
-      },
-    ],
-  }),
-  component: HomePage,
-});
-
-function HomePage() {
+export function HomePage() {
   const ref = useReveal<HTMLDivElement>();
   const [heroVideoSrc, setHeroVideoSrc] = useState(HERO_VIDEO);
 

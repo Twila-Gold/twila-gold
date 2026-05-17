@@ -1,5 +1,5 @@
 import { PageBanner } from "@/components/site/PageBanner";
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import type { CSSProperties } from "react";
 import { BentoShowcase, type BentoTile } from "@/components/site/BentoShowcase";
 import {

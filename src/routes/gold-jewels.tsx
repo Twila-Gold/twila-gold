@@ -1,19 +1,7 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useMemo, useState } from "react";
 import { TrustStrip } from "@/components/site/TrustStrip";
 import { BANNERS, PRODUCTS } from "@/data/site";
-
-export const Route = createFileRoute("/gold-jewels")({
-  head: () => ({
-    meta: [
-      { title: "Gold Jewels — TWILA" },
-      { name: "description", content: "22K and 24K gold jewellery — heirloom necklaces, bangles, mangalsutras and more." },
-      { property: "og:title", content: "Gold Jewels — TWILA" },
-      { property: "og:image", content: BANNERS.gold.image },
-    ],
-  }),
-  component: GoldJewelsPage,
-});
 
 const filters = ["All", "Necklaces", "Bangles", "Earrings", "Rings", "Mangalsutra"];
 
@@ -27,7 +15,7 @@ const filterToTag: Record<string, string> = {
 
 const GOLD_PAGE_VIDEO = "https://res.cloudinary.com/dbntg4yrs/video/upload/v1778957613/TWILA_04_uc5d8r.mp4";
 
-function GoldJewelsPage() {
+export function GoldJewelsPage() {
   const banner = BANNERS.gold;
   const products = PRODUCTS.gold;
   const [activeFilter, setActiveFilter] = useState("All");

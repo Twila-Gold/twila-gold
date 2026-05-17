@@ -1,16 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { CategoryPage } from "@/components/site/CategoryPage";
-import { BANNERS } from "@/data/site";
 
-export const Route = createFileRoute("/shop/ladies")({
-  head: () => ({
-    meta: [
-      { title: "Ladies — TWILA" },
-      { name: "description", content: "Timeless silhouettes, written in precious metal — bridal, cocktail and daily edits." },
-      { property: "og:image", content: BANNERS.ladies.image },
-    ],
-  }),
-  component: () => (
+export function LadiesPage() {
+  return (
     <CategoryPage
       dataKey="ladies"
       bannerHeight="70vh"
@@ -51,5 +42,5 @@ export const Route = createFileRoute("/shop/ladies")({
       gridHidePrice
       filters={["All", "Necklaces", "Earrings", "Bangles", "Sets", "Rings"]}
     />
-  ),
-});
+  );
+}

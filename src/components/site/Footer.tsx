@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Instagram, Facebook, Twitter } from "lucide-react";
 import twilaLogo from "@/assets/Twila-Logo.jpg";
 

@@ -1,17 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { CategoryPage } from "@/components/site/CategoryPage";
 import { BANNERS, HERO_VIDEO_SECOND } from "@/data/site";
 
-export const Route = createFileRoute("/platinum-jewels")({
-  head: () => ({
-    meta: [
-      { title: "Platinum Jewels — TWILA" },
-      { name: "description", content: "PT950 platinum jewellery — couple bands, solitaires and architectural silhouettes." },
-      { property: "og:title", content: "Platinum Jewels — TWILA" },
-      { property: "og:image", content: BANNERS.platinum.image },
-    ],
-  }),
-  component: () => (
+export function PlatinumJewelsPage() {
+  return (
     <CategoryPage
       dataKey="platinum"
       bannerVideo={HERO_VIDEO_SECOND}
@@ -42,5 +33,5 @@ export const Route = createFileRoute("/platinum-jewels")({
       }}
       filters={["All", "Bands", "Solitaires", "Bracelets", "Chains", "Studs"]}
     />
-  ),
-});
+  );
+}

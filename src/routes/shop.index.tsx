@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { PageBanner } from "@/components/site/PageBanner";
 import { FullWidthSplitCarousel } from "@/components/site/FullWidthSplitCarousel";
 import { TrustStrip } from "@/components/site/TrustStrip";
@@ -6,18 +6,7 @@ import { BANNERS, CAROUSEL_ITEMS, SHOP_AUDIENCES } from "@/data/site";
 import { ChevronRight } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
 
-export const Route = createFileRoute("/shop/")({
-  head: () => ({
-    meta: [
-      { title: "The Boutique — Shop TWILA" },
-      { name: "description", content: "Curated jewellery edits for him, her and the little ones — explore the TWILA boutique." },
-      { property: "og:image", content: BANNERS.shop.image },
-    ],
-  }),
-  component: ShopHub,
-});
-
-function ShopHub() {
+export function ShopHub() {
   const ref = useReveal<HTMLDivElement>();
   const b = BANNERS.shop;
   return (

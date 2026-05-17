@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useRef } from "react";
 import { ChevronRight, ChevronLeft, Sparkles } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";

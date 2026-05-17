@@ -1,17 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { CategoryPage } from "@/components/site/CategoryPage";
 import { BANNERS, HERO_VIDEO } from "@/data/site";
 
-export const Route = createFileRoute("/diamond-jewels")({
-  head: () => ({
-    meta: [
-      { title: "Diamond Jewels — TWILA" },
-      { name: "description", content: "Certified solitaires and statement diamond jewellery in 18K gold settings." },
-      { property: "og:title", content: "Diamond Jewels — TWILA" },
-      { property: "og:image", content: BANNERS.diamond.image },
-    ],
-  }),
-  component: () => (
+export function DiamondJewelsPage() {
+  return (
     <CategoryPage
       dataKey="diamond"
       bannerVideo={HERO_VIDEO}
@@ -42,5 +33,5 @@ export const Route = createFileRoute("/diamond-jewels")({
       }}
       filters={["All", "Solitaires", "Studs", "Pendants", "Bracelets", "Bands"]}
     />
-  ),
-});
+  );
+}

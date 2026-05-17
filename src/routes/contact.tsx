@@ -1,22 +1,10 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { PageBanner } from "@/components/site/PageBanner";
 import { BANNERS } from "@/data/site";
 import { useReveal } from "@/hooks/use-reveal";
 import { Mail, MapPin, Phone, Check } from "lucide-react";
 
-export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — TWILA" },
-      { name: "description", content: "Visit the TWILA boutique or speak with a private advisor." },
-      { property: "og:image", content: BANNERS.contact.image },
-    ],
-  }),
-  component: ContactPage,
-});
-
-function ContactPage() {
+export function ContactPage() {
   const ref = useReveal<HTMLDivElement>();
   const [sent, setSent] = useState(false);
   const b = BANNERS.contact;

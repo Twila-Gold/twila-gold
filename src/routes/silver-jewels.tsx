@@ -1,19 +1,7 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useMemo, useState } from "react";
 import { TrustStrip } from "@/components/site/TrustStrip";
 import { BANNERS, HERO_VIDEO_SECOND, PRODUCTS } from "@/data/site";
-
-export const Route = createFileRoute("/silver-jewels")({
-  head: () => ({
-    meta: [
-      { title: "Silver Jewels — TWILA" },
-      { name: "description", content: "Sterling 925 silver — everyday hoops, stackables and gifting under ₹5K." },
-      { property: "og:title", content: "Silver Jewels — TWILA" },
-      { property: "og:image", content: BANNERS.silver.image },
-    ],
-  }),
-  component: SilverJewelsPage,
-});
 
 const filters = ["All", "Hoops", "Pendants", "Rings", "Cuffs", "Chains"];
 
@@ -25,7 +13,7 @@ const filterToTag: Record<string, string> = {
   Chains: "chain",
 };
 
-function SilverJewelsPage() {
+export function SilverJewelsPage() {
   const banner = BANNERS.silver;
   const products = PRODUCTS.silver;
   const [activeFilter, setActiveFilter] = useState("All");
