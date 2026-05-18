@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { ChevronRight, X } from "lucide-react";
+import { ChevronRight, Ear, Gem, Sparkles, X } from "lucide-react";
 import { ProductGlassGrid } from "@/components/site/ProductGlassGrid";
 import { TrustStrip } from "@/components/site/TrustStrip";
 import { WhyChooseTwila } from "@/components/site/WhyChooseTwila";
@@ -225,6 +225,41 @@ export function HomePage() {
           </div>
         </div>
       )}
+
+      <section className="">
+        <div className="mx-auto max-w-[1400px] px-5 lg:px-10 py-10 md:py-14">
+          <div className="border-y border-black/30 py-10 md:py-14">
+            <div className="grid gap-10 md:grid-cols-3 md:gap-14 text-center text-black/90">
+              <div className="reveal reveal-right reveal-half mx-auto max-w-sm">
+                <Gem size={54} strokeWidth={1.2} className="mx-auto text-[var(--gold)]" />
+                <h3 className="mt-3 font-serif text-4xl leading-tight">Ring Sizer</h3>
+                <p className="mt-3 text-lg leading-relaxed text-black/80">
+                  A ring is a crafted piece of jewelry worn on the finger, symbolizing elegance,
+                  style, and meaningful milestones.
+                </p>
+              </div>
+
+              <div className="reveal reveal-right reveal-half mx-auto max-w-sm" data-delay={90}>
+                <Sparkles size={54} strokeWidth={1.2} className="mx-auto text-[var(--gold)]" />
+                <h3 className="mt-3 font-serif text-4xl leading-tight">Jewellery Care</h3>
+                <p className="mt-3 text-lg leading-relaxed text-black/80">
+                  Proper jewelry care preserves the beauty, durability, and lasting brilliance of your
+                  precious pieces.
+                </p>
+              </div>
+
+              <div className="reveal reveal-right reveal-half mx-auto max-w-sm" data-delay={180}>
+                <Ear size={54} strokeWidth={1.2} className="mx-auto text-[var(--gold)]" />
+                <h3 className="mt-3 font-serif text-4xl leading-tight">Piercing Aftercare</h3>
+                <p className="mt-3 text-lg leading-relaxed text-black/80">
+                  Proper piercing aftercare ensures safe healing while maintaining the beauty and
+                  integrity of your jewelry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <ProductGlassGrid
         eyebrow="Just in"
