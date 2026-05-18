@@ -110,7 +110,7 @@ export function HomePage() {
 
             <div className="relative min-h-[460px] md:min-h-full">
               <img
-                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1600&q=80"
+                src="https://res.cloudinary.com/dbntg4yrs/image/upload/v1779101175/section2_ziegnn.webp?auto=format&fit=crop&w=1600&q=80"
                 alt="Model wearing fine jewellery"
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover"
