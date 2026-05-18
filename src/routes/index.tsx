@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { ChevronRight, Play } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { FullWidthSplitCarousel } from "@/components/site/FullWidthSplitCarousel";
 import { ProductGlassGrid } from "@/components/site/ProductGlassGrid";
 import { TrustStrip } from "@/components/site/TrustStrip";
@@ -45,32 +45,7 @@ export function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-navy/55 via-navy/35 to-navy/75" />
         <div className="absolute inset-x-0 bottom-0 z-10 mx-auto max-w-[1400px] px-5 lg:px-10 pb-10">
           <div className="reveal max-w-3xl">
-            <div className="text-[11px] tracking-[0.4em] uppercase text-gold mb-5 flex items-center gap-3">
-              <Play size={12} /> The Spring Edit · 2026
-            </div>
-            <h1 className="font-serif text-white text-5xl md:text-6xl lg:text-7xl">
-              Quietly precious.
-              <br />
-              Endlessly yours.
-            </h1>
-            <p className="text-white/80 mt-3 max-w-xl text-base md:text-lg">
-              A house of fine jewellery — where heirloom craftsmanship meets a
-              calm, modern point of view.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link
-                to="/shop"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[var(--gold)] text-[var(--navy-deep)] font-medium tracking-[0.18em] uppercase text-xs hover:bg-white transition"
-              >
-                Explore Collection <ChevronRight size={16} />
-              </Link>
-              <Link
-                to="/gold-jewels"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border border-white/40 text-white tracking-[0.18em] uppercase text-xs hover:border-gold hover:text-gold transition"
-              >
-                Discover Gold
-              </Link>
-            </div>
+            
           </div>
         </div>
       </section>
