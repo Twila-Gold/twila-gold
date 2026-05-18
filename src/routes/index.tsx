@@ -32,6 +32,30 @@ export function HomePage() {
       alt: "Child wearing a fine necklace",
     },
   ];
+  const clarityCollections = [
+    { label: "Gold", to: "/gold-jewels" },
+    { label: "Diamond", to: "/diamond-jewels" },
+    { label: "Platinum", to: "/platinum-jewels" },
+    { label: "Silver", to: "/silver-jewels" },
+  ];
+  const clarityHighlights = [
+    {
+      title: "Find Your Shine",
+      body: "Discover finely crafted jewelry designed to reflect your unique style with grace and sophistication.",
+      image:
+        "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779104723/section_card_1.png",
+      alt: "Close-up of a ring with warm golden reflections",
+      to: "/shop/ladies",
+    },
+    {
+      title: "Dreams In Detail",
+      body: "Experience exquisite designs that celebrate beauty, detail, and the art of fine jewelry.",
+      image:
+        "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779104813/section_card_2.png",
+      alt: "Portrait showcasing diamond jewellery styling",
+      to: "/diamond-jewels",
+    },
+  ];
   const [activeGalleryIndex, setActiveGalleryIndex] = useState(1);
   const [openGalleryIndex, setOpenGalleryIndex] = useState<number | null>(null);
 
@@ -268,6 +292,65 @@ export function HomePage() {
       />
 
       <WhyChooseTwila />
+
+      <section className="bg-white">
+        <div className="mx-auto max-w-[1400px] px-5 lg:px-10 py-20 md:py-24">
+          <div className="reveal text-center">
+            <h2 className="font-serif text-4xl md:text-6xl leading-[0.98] text-[var(--navy-deep)]">
+              Crystal Clear Charm
+            </h2>
+            <p className="mx-auto mt-5 max-w-3xl text-sm md:text-lg leading-relaxed text-[var(--navy)]/72">
+              Adorn yourself with the refined brilliance of Twila, where each piece is thoughtfully
+              crafted to embody timeless elegance and enduring sophistication, designed to be
+              treasured for a lifetime.
+            </p>
+            <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
+              {clarityCollections.map((item) => (
+                <Link
+                  key={item.label}
+                  to={item.to}
+                  className="rounded-full bg-[var(--navy)] px-5 py-2 text-[11px] font-medium uppercase tracking-[0.24em] text-white transition hover:bg-[var(--navy-deep)]"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-14 grid gap-5 md:grid-cols-2 md:gap-6">
+            {clarityHighlights.map((item, index) => (
+              <Link
+                key={item.title}
+                to={item.to}
+                className="reveal group relative isolate block min-h-[360px] overflow-hidden border border-black/10 bg-[#ece7df] p-5 md:min-h-[430px] md:p-6"
+                data-delay={index * 90}
+              >
+                <div className="relative h-full overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]"
+                  />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(18,13,34,0.12)_0%,rgba(18,13,34,0.22)_100%)]" />
+                  <div className="absolute inset-5 bg-[rgba(28,19,12,0.38)] transition duration-500 group-hover:bg-[rgba(28,19,12,0.46)] md:inset-6" />
+
+                  <div className="absolute inset-0 flex items-center justify-center p-8 text-center text-white">
+                    <div className="max-w-[24rem]">
+                      <h3 className="font-serif text-3xl md:text-5xl italic leading-none drop-shadow-sm">
+                        {item.title}
+                      </h3>
+                      <p className="mx-auto mt-4 max-w-[28ch] text-sm md:text-lg leading-relaxed text-white/90">
+                        {item.body}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
     </div>
   );
