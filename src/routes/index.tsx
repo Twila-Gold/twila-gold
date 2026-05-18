@@ -76,32 +76,61 @@ export function HomePage() {
       </section>
 
       {/* SHOP BY CATEGORY */}
-      <section className="mx-auto max-w-[1400px] px-5 lg:px-10 py-20">
-        <div className="text-center reveal mb-12">
-          <div className="text-[11px] tracking-[0.35em] uppercase text-gold mb-3">Shop By</div>
-          <h2 className="font-serif text-4xl md:text-5xl">Find your edit</h2>
-        </div>
-        <div className="grid grid-cols-3 gap-6 md:gap-12 max-w-4xl mx-auto">
-          {SHOP_AUDIENCES.map((a, i) => (
-            <Link
-              key={a.key}
-              to={a.href}
-              className="group reveal text-center"
-              data-delay={i * 80}
-            >
-              <div className="overflow-hidden rounded-full aspect-square border border-black/10 group-hover:border-[var(--gold)] transition">
+      <section className="bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(201,169,98,0.08)_100%)]">
+        <div className="mx-auto max-w-[1400px] px-5 lg:px-10 py-20 md:py-24">
+          <div className="reveal grid gap-8 border-y border-black/8 py-10 md:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)] md:items-end">
+            <div>
+              <div className="text-[11px] tracking-[0.35em] uppercase text-gold mb-3">Shop By</div>
+              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-none">
+                Find your edit
+              </h2>
+            </div>
+            <p className="max-w-xl text-sm md:text-base text-[var(--navy)]/70 leading-relaxed md:justify-self-end">
+              Curated wardrobes for every signature. Explore distinct selections shaped for daily ritual,
+              occasion dressing, and keepsakes made to stay close.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-5 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:grid-rows-2">
+            {SHOP_AUDIENCES.map((a, i) => (
+              <Link
+                key={a.key}
+                to={a.href}
+                className={`group reveal relative overflow-hidden rounded-[2rem] border border-black/10 bg-white shadow-[0_24px_70px_-40px_rgba(11,27,58,0.45)] ${
+                  i === 0 ? "min-h-[480px] lg:row-span-2" : "min-h-[230px]"
+                }`}
+                data-delay={i * 90}
+              >
                 <img
                   src={a.image}
                   alt={a.label}
                   loading="lazy"
-                  className="w-full h-full object-cover shimmer-img"
+                  className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]"
                 />
-              </div>
-              <div className="mt-4 font-serif text-xl md:text-2xl tracking-[0.18em] uppercase group-hover:text-gold transition">
-                {a.label}
-              </div>
-            </Link>
-          ))}
+                <div className="absolute inset-0 bg-gradient-to-t from-[rgba(11,27,58,0.88)] via-[rgba(11,27,58,0.28)] to-transparent" />
+                <div className="relative flex h-full flex-col justify-end p-6 md:p-8 text-white">
+                  <div className="text-[10px] tracking-[0.34em] uppercase text-white/70">
+                    {i === 0 ? "Signature Edit" : "Curated Wardrobe"}
+                  </div>
+                  <div className="mt-3 flex items-end justify-between gap-4">
+                    <div>
+                      <h3 className="font-serif text-3xl md:text-4xl uppercase tracking-[0.12em]">
+                        {a.label}
+                      </h3>
+                      <p className="mt-3 max-w-sm text-sm md:text-base text-white/78 leading-relaxed">
+                        {i === 0
+                          ? "A refined edit of statement pieces and everyday signatures designed to anchor a jewellery wardrobe."
+                          : "Polished selections composed with a lighter, more focused point of view."}
+                      </p>
+                    </div>
+                    <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/30 bg-white/10 transition group-hover:border-[var(--gold)] group-hover:text-gold">
+                      <ChevronRight size={18} />
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
