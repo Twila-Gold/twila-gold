@@ -33,6 +33,7 @@ export function KidsPage() {
       gridEyebrow="Curated"
       gridHeading="Kids pieces"
       gridHidePrice
+      gridShowContactActions
       filters={["All", "Studs", "Charms", "Bracelets", "Pendants"]}
     />
   );

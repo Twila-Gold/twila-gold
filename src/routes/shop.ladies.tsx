@@ -33,6 +33,7 @@ export function LadiesPage() {
       gridEyebrow="Curated"
       gridHeading="Ladies pieces"
       gridHidePrice
+      gridShowContactActions
       filters={["All", "Necklaces", "Earrings", "Bangles", "Sets", "Rings"]}
     />
   );

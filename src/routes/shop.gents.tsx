@@ -33,6 +33,7 @@ export function GentsPage() {
       gridEyebrow="Curated"
       gridHeading="Gents pieces"
       gridHidePrice
+      gridShowContactActions
       filters={["All", "Rings", "Chains", "Bracelets", "Cufflinks"]}
     />
   );

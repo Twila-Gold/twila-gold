@@ -25,6 +25,7 @@ interface Cfg {
   gridFilterMap?: Record<string, string>;
   gridVariant?: "glass" | "catalog";
   gridHidePrice?: boolean;
+  gridShowContactActions?: boolean;
   bannerVideo?: string;
   bannerHeight?: string;
   bannerMobileHeight?: string;
@@ -175,7 +176,7 @@ export function CategoryPage(cfg: Cfg) {
         filterMap={cfg.gridFilterMap}
         variant={cfg.gridVariant ?? "glass"}
         hidePrice={cfg.gridHidePrice ?? cfg.gridVariant === "catalog"}
-        showContactActions={cfg.gridVariant === "catalog"}
+        showContactActions={cfg.gridShowContactActions ?? cfg.gridVariant === "catalog"}
       />
       <TrustStrip />
     </>
