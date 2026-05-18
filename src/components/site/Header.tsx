@@ -55,20 +55,15 @@ export function Header() {
                     shopOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-1 pointer-events-none"
                   }`}
                 >
-                  <div className="bg-navy-deep border border-white/10 shadow-2xl rounded-xl p-6 w-[640px] grid grid-cols-3 gap-5">
+                  <div className="bg-navy-deep border border-white/10 shadow-2xl rounded-xl p-5 w-[280px] flex flex-col gap-3">
                     {SHOP_AUDIENCES.map((a) => (
                       <Link
                         key={a.key}
                         to={a.href}
-                        className="group text-center"
+                        className="group font-serif text-sm tracking-[0.2em] uppercase text-white/85 hover:text-gold transition"
                         onClick={() => setShopOpen(false)}
                       >
-                        <div className="overflow-hidden rounded-full aspect-square mx-auto w-32 border border-white/15 group-hover:border-[var(--gold)] transition">
-                          <img src={a.image} alt={a.label} className="w-full h-full object-cover shimmer-img" loading="lazy" />
-                        </div>
-                        <div className="mt-3 font-serif text-base tracking-[0.22em] uppercase group-hover:text-gold transition">
-                          {a.label}
-                        </div>
+                        {a.label}
                       </Link>
                     ))}
                   </div>
