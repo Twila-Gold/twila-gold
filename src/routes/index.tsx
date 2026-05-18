@@ -78,7 +78,6 @@ export function HomePage() {
         <div className="mx-auto max-w-[1400px] px-5 lg:px-10 py-12 md:py-16">
           <div className="reveal grid overflow-hidden rounded-sm md:grid-cols-2">
             <div className="bg-[#efefef] px-7 py-10 md:px-14 md:py-16 lg:px-20 lg:py-20 text-[#131313]">
-              <div className="text-[10px] tracking-[0.32em] uppercase text-black/55 mb-8">Find Your Edit</div>
 
               <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.02]">
                 Timeless
