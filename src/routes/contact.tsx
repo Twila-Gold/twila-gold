@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { PageBanner } from "@/components/site/PageBanner";
-import { BANNERS } from "@/data/site";
+import { BANNERS, diamondImg } from "@/data/site";
 import { useReveal } from "@/hooks/use-reveal";
 import { Mail, MapPin, Phone, Check } from "lucide-react";
 
@@ -68,7 +68,7 @@ export function ContactPage() {
         <div className="lg:col-span-2 grid gap-5">
           <div className="reveal glass-light glass-gold-border rounded-2xl overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=80"
+              src={diamondImg(3)}
               alt="TWILA boutique interior"
               loading="lazy"
               className="w-full aspect-[4/3] object-cover"

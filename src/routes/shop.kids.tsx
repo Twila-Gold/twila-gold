@@ -1,4 +1,5 @@
 import { CategoryPage } from "@/components/site/CategoryPage";
+import { goldImg, silverImg } from "@/data/site";
 
 export function KidsPage() {
   return (
@@ -11,11 +12,11 @@ export function KidsPage() {
         title: "Exclusive Kids Jewels",
         collageImages: [
           { src: "https://images.unsplash.com/photo-1561828995-aa79a2db86dd?auto=format&fit=crop&w=900&q=80", alt: "Kids pendant" },
-          { src: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=80", alt: "Kids charm" },
-          { src: "https://images.unsplash.com/photo-1609245224731-2ce0f0c3c6b6?auto=format&fit=crop&w=900&q=80", alt: "Kids studs" },
-          { src: "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=900&q=80", alt: "Kids bracelet" },
+          { src: silverImg(0), alt: "Kids charm" },
+          { src: silverImg(1), alt: "Kids studs" },
+          { src: goldImg(3), alt: "Kids bracelet" },
           { src: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=900&q=80", alt: "Kids chain" },
-          { src: "https://images.unsplash.com/photo-1620656798579-1984d9e87df7?auto=format&fit=crop&w=900&q=80", alt: "Kids ring" },
+          { src: goldImg(6), alt: "Kids ring" },
         ],
         storyTitle: "Little Sparkles, Big Smiles",
         storyLead: "Made for Playful Moments",
@@ -28,7 +29,7 @@ export function KidsPage() {
       bentoTiles={[
         { type: "image", title: "First Studs", image: "https://images.unsplash.com/photo-1561828995-aa79a2db86dd?auto=format&fit=crop&w=1000&q=80", body: "Hypoallergenic, secure backings.", span: "md:col-span-2 md:row-span-2" },
         { type: "stat", stat: "925", title: "Skin-safe silver" },
-        { type: "image", title: "Charms", image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=80" },
+        { type: "image", title: "Charms", image: silverImg(2) },
         { type: "text", title: "Designed for little hands", body: "Smooth edges, lightweight, secure clasps — and built to be re-sized as they grow." },
         { type: "cta", title: "Naming-day gifts", body: "Personalised pieces, ready to box.", ctaLabel: "Explore", ctaHref: "/shop/kids" },
         { type: "stat", stat: "0–12", title: "Years" },

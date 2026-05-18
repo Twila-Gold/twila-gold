@@ -4,7 +4,7 @@ import { ChevronRight, Ear, Gem, Sparkles, X } from "lucide-react";
 import { ProductGlassGrid } from "@/components/site/ProductGlassGrid";
 import { TrustStrip } from "@/components/site/TrustStrip";
 import { WhyChooseTwila } from "@/components/site/WhyChooseTwila";
-import { HERO_VIDEO, HERO_VIDEO_FALLBACK, HERO_VIDEO_SECOND, PRODUCTS } from "@/data/site";
+import { diamondImg, goldImg, HERO_VIDEO, HERO_VIDEO_FALLBACK, HERO_VIDEO_SECOND, ladiesImg, PRODUCTS } from "@/data/site";
 import { useReveal } from "@/hooks/use-reveal";
 
 export function HomePage() {
@@ -13,12 +13,12 @@ export function HomePage() {
   const galleryItems = [
     {
       title: "Bold Elegance",
-      image: "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779101568/ring_pve2na.png",
+      image: diamondImg(0),
       alt: "Close-up of a gemstone ring",
     },
     {
       title: "Timeless Beauty",
-      image: "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779101566/chain_bsqwse.png",
+      image: goldImg(0),
       alt: "Traditional gold necklace",
     },
     {
@@ -42,16 +42,14 @@ export function HomePage() {
     {
       title: "Find Your Shine",
       body: "Discover finely crafted jewelry designed to reflect your unique style with grace and sophistication.",
-      image:
-        "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779104723/section_card_1.png",
+      image: ladiesImg(7),
       alt: "Close-up of a ring with warm golden reflections",
       to: "/shop/ladies",
     },
     {
       title: "Dreams In Detail",
       body: "Experience exquisite designs that celebrate beauty, detail, and the art of fine jewelry.",
-      image:
-        "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779104813/section_card_2.png",
+      image: diamondImg(1),
       alt: "Portrait showcasing diamond jewellery styling",
       to: "/diamond-jewels",
     },
