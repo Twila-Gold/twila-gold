@@ -12,23 +12,23 @@ export function HomePage() {
   const [heroVideoSrc, setHeroVideoSrc] = useState(HERO_VIDEO);
   const galleryItems = [
     {
-      title: "Radiant Ring",
-      image: PRODUCTS.diamond[0].image,
+      title: "Bold Elegance",
+      image: "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779101568/ring_pve2na.png",
       alt: "Close-up of a gemstone ring",
     },
     {
       title: "Timeless Beauty",
-      image: PRODUCTS.gold[0].image,
+      image: "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779101566/chain_bsqwse.png",
       alt: "Traditional gold necklace",
     },
     {
-      title: "Subtle Spark",
-      image: PRODUCTS.ladies[2].image,
+      title: "Everyday Grace",
+      image: "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779101572/neclase_bruf4x.png",
       alt: "Delicate pendant necklace",
     },
     {
-      title: "Little Treasures",
-      image: PRODUCTS.kids[0].image,
+      title: "Tiny Treasures",
+      image: "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779101569/kid_la1pgw.png",
       alt: "Child wearing a fine necklace",
     },
   ];
