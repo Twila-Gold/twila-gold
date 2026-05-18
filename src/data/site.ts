@@ -33,14 +33,13 @@ const inr = (n: number) => "₹" + n.toLocaleString("en-IN");
 /** Gold collection imagery — used for banners, products, and carousels site-wide. */
 export const GOLD_IMAGES = [
   "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779106203/valentines-day-still-life-design_nultgk.webp",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779106200/Diamond-01_de1q7i.webp",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779106199/akali-m5-s4-bg-a_npwny8.webp",
   "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779107772/earrings.webp",
   "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779106200/Eaarings-01_bjqhkq.webp",
   "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779106200/ChatGPT-Image-Apr-16-2026-01_47_54-PM_brrtbj.webp",
   "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779106199/ChatGPT-Image-Apr-16-2026-01_41_28-PM_m5qgqn.webp",
   "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779106199/ChatGPT-Image-Apr-16-2026-01_13_47-PM_kpt37w.webp",
   "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779106199/ChatGPT-Image-Apr-12-2026-08_24_30-PM_go3co7.webp",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779106199/akali-m5-s4-bg-a_npwny8.webp",
   "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779106199/button-top-earrings-for-women_l6s08s.webp",
 ] as const;
 
@@ -174,14 +173,14 @@ const buildList = (
 
 export const PRODUCTS: Record<string, Product[]> = {
   gold: buildList("gold", goldImgs, [
-    ["Aurelia Necklace", "Necklace · 22K", 184500, true],
-    ["Veda Bangle Pair", "Bangles · 22K", 142000],
-    ["Surya Pendant", "Pendant · 22K", 38900],
-    ["Ananta Earrings", "Earrings · 22K", 64200, true],
-    ["Mira Chain", "Chain · 22K", 92500],
-    ["Lavanya Ring", "Ring · 22K", 31200],
-    ["Ojas Mangalsutra", "Mangalsutra · 22K", 78900],
-    ["Tara Stud Set", "Studs · 22K", 21800],
+    ["Eterna", "Pendant · 22K", 184500, true],
+    ["Aurex", "Bracelet · 22K", 142000],
+    ["Rubelle", "Earrings · 22K", 38900],
+    ["Zarielle", "Earrings · 22K", 64200, true],
+    ["Regalia", "Necklace · 22K", 92500],
+    ["Auralis", "Waist Chain · 22K", 31200],
+    ["Rouvina", "Earrings · 22K", 78900],
+    ["Nooré", "Anklets · 22K", 21800],
   ]),
   diamond: buildList("dia", diamondImgs, [
     ["Solitaire Aria", "Ring · 18K + VVS1", 248000, true],

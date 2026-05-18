@@ -3,7 +3,15 @@ import { useMemo, useState } from "react";
 import { TrustStrip } from "@/components/site/TrustStrip";
 import { BANNERS, PRODUCTS } from "@/data/site";
 
-const filters = ["All", "Necklaces", "Bangles", "Earrings", "Rings", "Mangalsutra"];
+const filters = [
+  "All",
+  "Pendant",
+  "Bracelet",
+  "Earrings",
+  "Necklace",
+  "Waist Chain",
+  "Anklets"
+];
 
 const filterToTag: Record<string, string> = {
   Necklaces: "necklace",
@@ -22,8 +30,11 @@ export function GoldJewelsPage() {
 
   const filteredProducts = useMemo(() => {
     if (activeFilter === "All") return products;
-    const needle = filterToTag[activeFilter];
-    return products.filter((p) => p.tag.toLowerCase().includes(needle));
+    // Match only the product type (before '·')
+    return products.filter((p) => {
+      const type = p.tag.split("·")[0].trim().toLowerCase();
+      return type === activeFilter.toLowerCase();
+    });
   }, [activeFilter, products]);
 
   return (
