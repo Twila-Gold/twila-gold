@@ -1,16 +1,39 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { ChevronRight } from "lucide-react";
-import { FullWidthSplitCarousel } from "@/components/site/FullWidthSplitCarousel";
+import { ChevronRight, X } from "lucide-react";
 import { ProductGlassGrid } from "@/components/site/ProductGlassGrid";
 import { TrustStrip } from "@/components/site/TrustStrip";
 import { WhyChooseTwila } from "@/components/site/WhyChooseTwila";
-import { CAROUSEL_ITEMS, HERO_VIDEO, HERO_VIDEO_FALLBACK, HERO_VIDEO_SECOND, PRODUCTS } from "@/data/site";
+import { HERO_VIDEO, HERO_VIDEO_FALLBACK, HERO_VIDEO_SECOND, PRODUCTS } from "@/data/site";
 import { useReveal } from "@/hooks/use-reveal";
 
 export function HomePage() {
   const ref = useReveal<HTMLDivElement>();
   const [heroVideoSrc, setHeroVideoSrc] = useState(HERO_VIDEO);
+  const galleryItems = [
+    {
+      title: "Radiant Ring",
+      image: PRODUCTS.diamond[0].image,
+      alt: "Close-up of a gemstone ring",
+    },
+    {
+      title: "Timeless Beauty",
+      image: PRODUCTS.gold[0].image,
+      alt: "Traditional gold necklace",
+    },
+    {
+      title: "Subtle Spark",
+      image: PRODUCTS.ladies[2].image,
+      alt: "Delicate pendant necklace",
+    },
+    {
+      title: "Little Treasures",
+      image: PRODUCTS.kids[0].image,
+      alt: "Child wearing a fine necklace",
+    },
+  ];
+  const [activeGalleryIndex, setActiveGalleryIndex] = useState(1);
+  const [openGalleryIndex, setOpenGalleryIndex] = useState<number | null>(null);
 
   const handleHeroVideoEnded = () => {
     if (heroVideoSrc !== HERO_VIDEO_SECOND) {
@@ -99,14 +122,109 @@ export function HomePage() {
         </div>
       </section>
 
-      <FullWidthSplitCarousel
-        eyebrow="Featured journeys"
-        title="Discover our collections"
-        ctaLabel="See all collections"
-        ctaHref="/shop"
-        items={CAROUSEL_ITEMS.home}
-        bgClassName="bg-navy"
-      />
+      <section className="bg-navy border-t border-white/10">
+        <div className="mx-auto max-w-[1400px] px-3 md:px-5 lg:px-10 py-16 md:py-20">
+          <div className="reveal text-center">
+            <h2 className="font-serif text-4xl md:text-6xl leading-tight text-white">
+              Discover Your Signature Shine
+            </h2>
+            <p className="mt-4 text-base md:text-2xl text-white/75 max-w-3xl mx-auto leading-relaxed">
+              Explore our latest designs crafted to elevate your everyday and special moments.
+            </p>
+          </div>
+
+          <div
+            className="mt-12 hidden md:grid gap-1 transition-all duration-500"
+            style={{
+              gridTemplateColumns: galleryItems
+                .map((_, i) => (i === activeGalleryIndex ? "2.2fr" : "1fr"))
+                .join(" "),
+            }}
+          >
+            {galleryItems.map((item, i) => (
+              <button
+                type="button"
+                key={item.title}
+                onMouseEnter={() => setActiveGalleryIndex(i)}
+                onFocus={() => setActiveGalleryIndex(i)}
+                onClick={() => setOpenGalleryIndex(i)}
+                className="group relative h-[420px] overflow-hidden text-left"
+              >
+                <img
+                  src={item.image}
+                  alt={item.alt}
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <div className="flex items-center gap-3">
+                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white text-[var(--navy)] text-2xl leading-none">
+                      +
+                    </span>
+                    <span className="font-medium text-lg md:text-2xl">{item.title}</span>
+                  </div>
+                </div>
+              </button>
+            ))}
+          </div>
+
+          <div className="mt-10 grid grid-cols-2 gap-2 md:hidden">
+            {galleryItems.map((item, i) => (
+              <button
+                type="button"
+                key={item.title}
+                onClick={() => setOpenGalleryIndex(i)}
+                className="relative h-52 overflow-hidden text-left"
+              >
+                <img src={item.image} alt={item.alt} loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
+                <span className="absolute bottom-3 left-3 text-white text-sm font-medium">{item.title}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {openGalleryIndex !== null && (
+        <div className="fixed inset-0 z-[100] bg-black/92 p-4 md:p-8">
+          <button
+            type="button"
+            onClick={() => setOpenGalleryIndex(null)}
+            className="absolute right-4 top-4 md:right-8 md:top-8 z-10 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/30 text-white hover:border-white"
+            aria-label="Close gallery"
+          >
+            <X size={20} />
+          </button>
+
+          <div className="mx-auto max-w-[1400px] h-full flex flex-col gap-5 pt-12 md:pt-14">
+            <div className="flex-1 overflow-auto rounded-md border border-white/15 bg-black/35 flex items-center justify-center">
+              <img
+                src={galleryItems[openGalleryIndex].image}
+                alt={galleryItems[openGalleryIndex].alt}
+                className="mx-auto block h-full w-auto max-w-none object-contain"
+              />
+            </div>
+
+            <div className="overflow-x-auto">
+              <div className="flex gap-3 min-w-max pb-1">
+                {galleryItems.map((item, i) => (
+                  <button
+                    type="button"
+                    key={item.title}
+                    onClick={() => setOpenGalleryIndex(i)}
+                    className={`relative h-20 w-28 overflow-hidden rounded border transition ${
+                      i === openGalleryIndex ? "border-[var(--gold)]" : "border-white/30"
+                    }`}
+                  >
+                    <img src={item.image} alt={item.alt} className="absolute inset-0 h-full w-full object-cover" />
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       <ProductGlassGrid
         eyebrow="Just in"
