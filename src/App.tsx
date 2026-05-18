@@ -2,7 +2,6 @@ import { Outlet, Route, Routes } from "react-router-dom";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
-import { MetalPriceTicker } from "@/components/site/MetalPriceTicker";
 import { HomePage } from "@/routes/index";
 import { ShopLayout } from "@/routes/shop";
 import { ShopHub } from "@/routes/shop.index";
@@ -19,7 +18,6 @@ function AppLayout() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <MetalPriceTicker />
       <main className="flex-1">
         <Outlet />
       </main>
