@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { NAV, SHOP_AUDIENCES } from "@/data/site";
 import { ChevronDown, Menu, X } from "lucide-react";
-import twilaLogo from "@/assets/Twila-Logo.jpg";
+import twilaLogo from "@/assets/Twila-Logo.png";
 
 function Logo() {
   return (

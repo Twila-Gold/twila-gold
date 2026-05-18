@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Twitter } from "lucide-react";
-import twilaLogo from "@/assets/Twila-Logo.jpg";
+import twilaLogo from "@/assets/Twila-Logo.png";
 
 export function Footer() {
   return (
