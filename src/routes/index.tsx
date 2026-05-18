@@ -21,7 +21,7 @@ export function HomePage() {
   return (
     <div ref={ref}>
       {/* HERO */}
-      <section className="relative w-full overflow-hidden" style={{ height: "min(86vh, 820px)" }}>
+      <section className="relative w-full overflow-hidden md:h-[80vh]">
         <img
           src={HERO_VIDEO_FALLBACK}
           alt=""
@@ -31,7 +31,7 @@ export function HomePage() {
         />
         <video
           key={heroVideoSrc}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="relative block w-full h-auto object-cover md:absolute md:inset-0 md:w-full md:h-full"
           autoPlay
           muted
           loop={heroVideoSrc === HERO_VIDEO_SECOND}
@@ -42,18 +42,18 @@ export function HomePage() {
         >
           <source src={heroVideoSrc} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-[var(--navy-deep)]/55 via-[var(--navy-deep)]/30 to-[var(--navy-deep)]/85" />
-        <div className="relative h-full mx-auto max-w-[1400px] px-5 lg:px-10 flex flex-col justify-end pb-16 md:pb-24 text-white">
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/55 via-navy/35 to-navy/75" />
+        <div className="absolute inset-x-0 bottom-0 z-10 mx-auto max-w-[1400px] px-5 lg:px-10 pb-10">
           <div className="reveal max-w-3xl">
             <div className="text-[11px] tracking-[0.4em] uppercase text-gold mb-5 flex items-center gap-3">
               <Play size={12} /> The Spring Edit · 2026
             </div>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-[88px] leading-[1.02]">
+            <h1 className="font-serif text-white text-5xl md:text-6xl lg:text-7xl">
               Quietly precious.
               <br />
               Endlessly yours.
             </h1>
-            <p className="mt-5 text-white/85 text-lg max-w-xl">
+            <p className="text-white/80 mt-3 max-w-xl text-base md:text-lg">
               A house of fine jewellery — where heirloom craftsmanship meets a
               calm, modern point of view.
             </p>
