@@ -10,13 +10,9 @@ export function Footer() {
           <img
             src={twilaLogo}
             alt="TWILA Gold Diamonds Platinum"
-            className="h-16 w-auto"
+            className="h-20 md:h-36 w-auto"
             loading="lazy"
           />
-          <p className="text-sm text-white/65 mt-4 leading-relaxed">
-            A house of fine jewellery — heirloom craftsmanship, conscientiously sourced metals,
-            and a calm, considered point of view.
-          </p>
         </div>
 
         <div>
