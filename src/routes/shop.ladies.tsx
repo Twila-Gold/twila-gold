@@ -10,14 +10,6 @@ export function LadiesPage() {
       disableCarousel
       showcase={{
         title: "Exclusive Ladies Jewels",
-        collageImages: [
-          { src: ladiesImg(0), alt: "Ladies necklace" },
-          { src: ladiesImg(1), alt: "Ladies pendant" },
-          { src: ladiesImg(2), alt: "Ladies ring" },
-          { src: ladiesImg(3), alt: "Ladies diamond set" },
-          { src: ladiesImg(4), alt: "Ladies chain" },
-          { src: ladiesImg(5), alt: "Ladies ring detail" },
-        ],
         storyTitle: "Grace, Crafted Daily",
         storyLead: "Timeless Elegance for Every Chapter",
         storyBody: "From subtle everyday sparkle to occasion-led statements, each piece is created to feel refined, wearable, and unmistakably personal.",

@@ -10,14 +10,6 @@ export function GentsPage() {
       disableCarousel
       showcase={{
         title: "Exclusive Gents Jewels",
-        collageImages: [
-          { src: gentsImg(1), alt: "Gents bracelet" },
-          { src: gentsImg(0), alt: "Gents ring" },
-          { src: gentsImg(2), alt: "Gents stud" },
-          { src: gentsImg(5), alt: "Gents pin" },
-          { src: gentsImg(4), alt: "Gents chain" },
-          { src: gentsImg(3), alt: "Gents ring detail" },
-        ],
         storyTitle: "Modern Masculinity, Redefined",
         storyLead: "Bold Elegance for the Modern Man",
         storyBody: "Our gents collection balances clean structure with rich detail - from everyday signets and chains to statement pieces designed to hold presence.",

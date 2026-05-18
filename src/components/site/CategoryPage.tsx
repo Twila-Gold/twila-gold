@@ -32,7 +32,7 @@ interface Cfg {
   disableCarousel?: boolean;
   showcase?: {
     title: string;
-    collageImages: { src: string; alt: string }[];
+    collageImages?: { src: string; alt: string }[]; // Made optional
     storyTitle: string;
     storyLead: string;
     storyBody: string;
@@ -106,7 +106,7 @@ export function CategoryPage(cfg: Cfg) {
           mobileHeight={cfg.bannerMobileHeight}
         />
       )}
-      {cfg.showcase && (
+      {cfg.showcase && cfg.showcase.collageImages && (
         <section className="bg-[var(--cream)]">
           <div className="mx-auto max-w-[1400px] px-5 lg:px-10 py-16 md:py-20">
             <h2 className="text-center font-serif text-5xl md:text-6xl text-[var(--navy-deep)] mb-10 md:mb-12">

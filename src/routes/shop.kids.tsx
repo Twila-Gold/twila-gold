@@ -10,14 +10,6 @@ export function KidsPage() {
       disableCarousel
       showcase={{
         title: "Exclusive Kids Jewels",
-        collageImages: [
-          { src: "https://images.unsplash.com/photo-1561828995-aa79a2db86dd?auto=format&fit=crop&w=900&q=80", alt: "Kids pendant" },
-          { src: silverImg(0), alt: "Kids charm" },
-          { src: silverImg(1), alt: "Kids studs" },
-          { src: goldImg(3), alt: "Kids bracelet" },
-          { src: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=900&q=80", alt: "Kids chain" },
-          { src: goldImg(6), alt: "Kids ring" },
-        ],
         storyTitle: "Little Sparkles, Big Smiles",
         storyLead: "Made for Playful Moments",
         storyBody: "Thoughtfully crafted mini pieces with safe finishes and lightweight comfort, designed to celebrate milestones and everyday joy.",
