@@ -2,13 +2,14 @@
 @source "../src";
 @import "tw-animate-css";
 
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&display=swap");
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
-  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "AR One Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-header: "AR One Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "AR One Sans", ui-sans-serif, system-ui, sans-serif;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -90,6 +91,7 @@
     font-feature-settings: "ss01", "cv01";
   }
   h1, h2, h3, h4, .font-serif { font-family: var(--font-serif); letter-spacing: -0.01em; }
+  .font-header { font-family: var(--font-header); letter-spacing: 0.02em; }
 }
 
 @layer utilities {

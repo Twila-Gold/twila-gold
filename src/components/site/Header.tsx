@@ -32,7 +32,7 @@ export function Header() {
         <Logo />
 
         {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-7 font-serif text-[13px] tracking-[0.18em] uppercase">
+        <nav className="hidden lg:flex items-center gap-7 font-header text-[13px] tracking-[0.18em] uppercase">
           {NAV.map((item) =>
             item.hasMenu ? (
               <div
@@ -60,7 +60,7 @@ export function Header() {
                       <Link
                         key={a.key}
                         to={a.href}
-                        className="group font-serif text-sm tracking-[0.2em] uppercase text-white/85 hover:text-gold transition"
+                        className="group font-header text-sm tracking-[0.2em] uppercase text-white/85 hover:text-gold transition"
                         onClick={() => setShopOpen(false)}
                       >
                         {a.label}
@@ -94,7 +94,7 @@ export function Header() {
       {/* Mobile drawer */}
       {mobileOpen && (
         <div className="lg:hidden border-t border-white/10 bg-navy-deep">
-          <nav className="px-5 py-4 flex flex-col font-serif uppercase tracking-[0.18em] text-sm">
+          <nav className="px-5 py-4 flex flex-col font-header uppercase tracking-[0.18em] text-sm">
             {NAV.map((item) =>
               item.hasMenu ? (
                 <div key={item.href} className="border-b border-white/5">
