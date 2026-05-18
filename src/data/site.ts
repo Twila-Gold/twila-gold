@@ -117,6 +117,20 @@ export const LADIES_IMAGES = [
 
 export const ladiesImg = (i: number) => LADIES_IMAGES[i % LADIES_IMAGES.length];
 
+// Define KIDS_IMAGES and kidsImg in the same pattern as other image constants
+export const KIDS_IMAGES: string[] = [
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779112708/ChatGPT-Image-Apr-15-2026-08_47_40-PM_ontmo5.png",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779112707/kkU5X86GTZBz8Oqyfs8jkpZkq5lKo81V1MpNsR_IbT0ybvGT4MiLGtf_DWlL_juwx60.jpg",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779112706/earrinmg_dp4r71.jpg",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779112707/FDp5B-mUqm7owAXAqPEij6KXADL0Ta4kkFPxPb7Y7q8ozAC_kGihF_l_akOm_qwijrc.jpg",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779112706/ChatGPT-Image-Apr-16-2026-12_04_47-PM-800x1200_p4jgei.png",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779112706/cZNvz9CVJJ8NS-tTvSXPLKx7Ts9Z0WlHwZE3tQwu0yJubasdtQuS28pHKgag_hmys6i.jpg",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779112705/aa_oshucu.jpg",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779112704/A-gH5PwGsqcD4v-G53Bd3gqz8G-uSe9ob3PKR7ER3QMllfRblhnNJAZ4t_dP_valqce.jpg",
+];
+
+export const kidsImg = (i: number) => KIDS_IMAGES[i % KIDS_IMAGES.length];
+
 export const SHOP_AUDIENCES = [
   { key: "gents", label: "Gents", href: "/shop/gents", image: gentsImg(0) },
   { key: "ladies", label: "Ladies", href: "/shop/ladies", image: ladiesImg(7) },
@@ -211,7 +225,7 @@ export const PRODUCTS: Record<string, Product[]> = {
     ["Étoile Studs", "Studs · 18K", 64200, true],
     ["Maharani Set", "Set · 22K", 412000],
   ]),
-  kids: buildList("kids", silverImgs, [
+  kids: buildList("kids", KIDS_IMAGES, [
     ["Little Star Pendant", "Pendant · 925", 2800, true],
     ["Mini Hoops", "Hoops · 18K", 14200],
     ["Charm Bracelet", "Bracelet · 925", 3600],
@@ -267,7 +281,7 @@ export const BANNERS: Record<string, { title: string; subtitle: string; image: s
   kids: {
     title: "Kids",
     subtitle: "Tiny treasures crafted with extraordinary care.",
-    image: u("photo-1561828995-aa79a2db86dd", 2000, 1100),
+    image: kidsImg(0),
     crumbs: ["Home", "Shop", "Kids"],
   },
   contact: {
@@ -285,7 +299,7 @@ export const CAROUSEL_ITEMS: Record<string, { title: string; image: string; meta
     { title: "Platinum Edits", image: platinumImg(0), meta: "PT950" },
     { title: "Everyday Silver", image: silverImg(0), meta: "925 · NEW" },
     { title: "Gents Signature", image: gentsImg(0), meta: "MEN · 12 LOOKS" },
-    { title: "Kids Charms", image: u("photo-1561828995-aa79a2db86dd", 800, 600), meta: "MINI · 925" },
+    { title: "Kids Charms", image: kidsImg(0), meta: "MINI · 925" },
     { title: "Solitaire Studio", image: diamondImg(1), meta: "BESPOKE" },
   ],
   gold: [
