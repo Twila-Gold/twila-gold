@@ -5,17 +5,17 @@ const reasons = [
   {
     icon: Gem,
     title: "Exceptional Craftsmanship",
-    body: "Each piece is handcrafted in our Bengaluru atelier with precision finishing and heirloom-grade detailing.",
+    body: "Each piece is thoughtfully designed and expertly crafted with attention to every detail, ensuring elegance, precision, and lasting beauty.",
   },
   {
     icon: ShieldCheck,
-    title: "Certified & Trusted",
-    body: "BIS hallmarked metals and independently certified stones ensure provenance, purity, and peace of mind.",
+    title: "Authentic & Certified Quality",
+    body: "We use only high-quality, certified materials to create jewelry that reflects true value, purity, and trust you can rely on.",
   },
   {
     icon: Sparkles,
     title: "Personalized Experience",
-    body: "From styling guidance to private appointments, we make every purchase feel thoughtful and personal.",
+    body: "We focus on understanding your style and preferences, offering a more personal and meaningful shopping experience every time.",
   },
 ];
 
