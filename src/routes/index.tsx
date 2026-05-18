@@ -267,48 +267,8 @@ export function HomePage() {
         hidePrice
       />
 
-      {/* Brand story strip */}
-      <section className="bg-navy text-white">
-        <div className="mx-auto max-w-[1400px] px-5 lg:px-10 py-24 grid md:grid-cols-2 gap-12 items-center">
-          <div className="reveal">
-            <div className="text-[11px] tracking-[0.35em] uppercase text-gold mb-4">
-              The House of Twila
-            </div>
-            <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-              Five generations of jewellers, one quiet philosophy.
-            </h2>
-            <p className="mt-5 text-white/75 leading-relaxed">
-              Every piece is hand-finished in our Bengaluru atelier, with metals
-              traceable to source and gemstones independently certified. We make
-              jewellery you'll keep, repair, re-set and pass on.
-            </p>
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 mt-8 text-xs tracking-[0.28em] uppercase border-b border-white/40 pb-1 hover:text-gold hover:border-gold transition"
-            >
-              Visit the atelier <ChevronRight size={14} />
-            </Link>
-          </div>
-          <div className="reveal grid grid-cols-2 gap-4">
-            <img
-              src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=700&q=80"
-              alt=""
-              className="rounded-2xl aspect-[3/4] object-cover"
-              loading="lazy"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1583937443351-d1ea0a1ebcfb?auto=format&fit=crop&w=700&q=80"
-              alt=""
-              className="rounded-2xl aspect-[3/4] object-cover mt-10"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </section>
-
       <WhyChooseTwila />
 
-      <TrustStrip />
     </div>
   );
 }
