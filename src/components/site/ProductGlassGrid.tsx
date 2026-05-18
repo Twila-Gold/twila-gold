@@ -110,7 +110,7 @@ export function ProductGlassGrid({
             <div className="p-4 md:p-5">
               <h3 className="font-serif text-xl text-[var(--navy-deep)] leading-tight">{p.name}</h3>
               <div className="text-[11px] tracking-[0.2em] uppercase text-[var(--navy)]/60 mt-1">
-                {p.tag}
+                {p.tag.split("·")[0].trim()}
               </div>
               {showContactActions && (
                 <>

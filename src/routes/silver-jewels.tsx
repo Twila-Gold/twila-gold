@@ -119,7 +119,7 @@ export function SilverJewelsPage() {
                 </div>
                 <div className="p-4">
                   <h3 className="font-serif text-xl text-[var(--navy-deep)] leading-tight">{p.name}</h3>
-                  <div className="mt-1 text-[11px] tracking-[0.2em] uppercase text-[var(--navy)]/55">{p.tag}</div>
+                  <div className="mt-1 text-[11px] tracking-[0.2em] uppercase text-[var(--navy)]/55">{p.tag.split("·")[0].trim()}</div>
                   <div className="mt-4 text-[10px] tracking-[0.24em] uppercase text-[var(--navy)]/60">
                     Enquire
                   </div>
