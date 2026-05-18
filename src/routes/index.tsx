@@ -5,7 +5,7 @@ import { FullWidthSplitCarousel } from "@/components/site/FullWidthSplitCarousel
 import { ProductGlassGrid } from "@/components/site/ProductGlassGrid";
 import { TrustStrip } from "@/components/site/TrustStrip";
 import { WhyChooseTwila } from "@/components/site/WhyChooseTwila";
-import { CAROUSEL_ITEMS, HERO_VIDEO, HERO_VIDEO_FALLBACK, HERO_VIDEO_SECOND, PRODUCTS, SHOP_AUDIENCES } from "@/data/site";
+import { CAROUSEL_ITEMS, HERO_VIDEO, HERO_VIDEO_FALLBACK, HERO_VIDEO_SECOND, PRODUCTS } from "@/data/site";
 import { useReveal } from "@/hooks/use-reveal";
 
 export function HomePage() {
@@ -50,61 +50,51 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* SHOP BY CATEGORY */}
-      <section className="bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(201,169,98,0.08)_100%)]">
-        <div className="mx-auto max-w-[1400px] px-5 lg:px-10 py-20 md:py-24">
-          <div className="reveal grid gap-8 border-y border-black/8 py-10 md:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)] md:items-end">
-            <div>
-              <div className="text-[11px] tracking-[0.35em] uppercase text-gold mb-3">Shop By</div>
-              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-none">
-                Find your edit
-              </h2>
-            </div>
-            <p className="max-w-xl text-sm md:text-base text-[var(--navy)]/70 leading-relaxed md:justify-self-end">
-              Curated wardrobes for every signature. Explore distinct selections shaped for daily ritual,
-              occasion dressing, and keepsakes made to stay close.
-            </p>
-          </div>
+      {/* FIND YOUR EDIT */}
+      <section className="bg-[#ededed]">
+        <div className="mx-auto max-w-[1400px] px-5 lg:px-10 py-12 md:py-16">
+          <div className="reveal grid overflow-hidden rounded-sm md:grid-cols-2">
+            <div className="bg-[#efefef] px-7 py-10 md:px-14 md:py-16 lg:px-20 lg:py-20 text-[#131313]">
+              <div className="text-[10px] tracking-[0.32em] uppercase text-black/55 mb-8">Find Your Edit</div>
 
-          <div className="mt-10 grid gap-5 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:grid-rows-2">
-            {SHOP_AUDIENCES.map((a, i) => (
-              <Link
-                key={a.key}
-                to={a.href}
-                className={`group reveal relative overflow-hidden rounded-[2rem] border border-black/10 bg-white shadow-[0_24px_70px_-40px_rgba(11,27,58,0.45)] ${
-                  i === 0 ? "min-h-[480px] lg:row-span-2" : "min-h-[230px]"
-                }`}
-                data-delay={i * 90}
-              >
-                <img
-                  src={a.image}
-                  alt={a.label}
-                  loading="lazy"
-                  className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[rgba(11,27,58,0.88)] via-[rgba(11,27,58,0.28)] to-transparent" />
-                <div className="relative flex h-full flex-col justify-end p-6 md:p-8 text-white">
-                  <div className="text-[10px] tracking-[0.34em] uppercase text-white/70">
-                    {i === 0 ? "Signature Edit" : "Curated Wardrobe"}
-                  </div>
-                  <div className="mt-3 flex items-end justify-between gap-4">
-                    <div>
-                      <h3 className="font-serif text-3xl md:text-4xl uppercase tracking-[0.12em]">
-                        {a.label}
-                      </h3>
-                      <p className="mt-3 max-w-sm text-sm md:text-base text-white/78 leading-relaxed">
-                        {i === 0
-                          ? "A refined edit of statement pieces and everyday signatures designed to anchor a jewellery wardrobe."
-                          : "Polished selections composed with a lighter, more focused point of view."}
-                      </p>
-                    </div>
-                    <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/30 bg-white/10 transition group-hover:border-[var(--gold)] group-hover:text-gold">
-                      <ChevronRight size={18} />
-                    </span>
-                  </div>
-                </div>
-              </Link>
-            ))}
+              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.02]">
+                Timeless
+                <br />
+                Elegance, Crafted
+                <br />
+                for You
+              </h2>
+
+              <div className="mt-10">
+                <h3 className="font-serif text-3xl md:text-4xl leading-tight">Shine Beyond Ordinary</h3>
+                <p className="mt-4 text-lg leading-relaxed text-black/80 max-w-[46ch]">
+                  Discover the perfect blend of artistry and sophistication with our exclusive jewelry collection.
+                  Each piece is designed to reflect grace, beauty, and individuality, making every moment you
+                  wear it truly unforgettable.
+                </p>
+              </div>
+
+              <div className="my-10 h-px w-full bg-black/35" />
+
+              <div>
+                <h3 className="font-serif text-3xl md:text-4xl leading-tight">Pure. Elegant. Timeless.</h3>
+                <p className="mt-4 text-lg leading-relaxed text-black/80 max-w-[46ch]">
+                  Our craftsmanship combines tradition with modern aesthetics, ensuring every detail shines with
+                  precision. Whether it&apos;s a statement piece or everyday elegance, we create jewelry that complements
+                  your unique style.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative min-h-[460px] md:min-h-full">
+              <img
+                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1600&q=80"
+                alt="Model wearing fine jewellery"
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-[rgba(120,0,0,0.35)] to-[rgba(95,0,0,0.08)]" />
+            </div>
           </div>
         </div>
       </section>
