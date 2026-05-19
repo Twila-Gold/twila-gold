@@ -1,7 +1,12 @@
 import { CategoryPage } from "@/components/site/CategoryPage";
-import { ladiesImg } from "@/data/site";
+import { ladiesImg, PRODUCTS } from "@/data/site";
 
 export function LadiesPage() {
+  const filters = [
+    "All",
+    ...new Set(PRODUCTS.ladies.map((p) => p.tag.split("·")[0].trim())),
+  ];
+
   return (
     <CategoryPage
       dataKey="ladies"
@@ -34,7 +39,7 @@ export function LadiesPage() {
       gridHeading="Ladies pieces"
       gridHidePrice
       gridShowContactActions
-      filters={["All", "Necklaces", "Earrings", "Bangles", "Sets", "Rings"]}
+      filters={filters}
     />
   );
 }

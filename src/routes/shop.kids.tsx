@@ -1,7 +1,12 @@
 import { CategoryPage } from "@/components/site/CategoryPage";
-import { goldImg, silverImg } from "@/data/site";
+import { silverImg, PRODUCTS } from "@/data/site";
 
 export function KidsPage() {
+  const filters = [
+    "All",
+    ...new Set(PRODUCTS.kids.map((p) => p.tag.split("·")[0].trim())),
+  ];
+
   return (
     <CategoryPage
       dataKey="kids"
@@ -34,7 +39,7 @@ export function KidsPage() {
       gridHeading="Kids pieces"
       gridHidePrice
       gridShowContactActions
-      filters={["All", "Studs", "Charms", "Bracelets", "Pendants"]}
+      filters={filters}
     />
   );
 }

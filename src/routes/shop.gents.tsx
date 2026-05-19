@@ -1,7 +1,12 @@
 import { CategoryPage } from "@/components/site/CategoryPage";
-import { gentsImg } from "@/data/site";
+import { gentsImg, PRODUCTS } from "@/data/site";
 
 export function GentsPage() {
+  const filters = [
+    "All",
+    ...new Set(PRODUCTS.gents.map((p) => p.tag.split("·")[0].trim())),
+  ];
+
   return (
     <CategoryPage
       dataKey="gents"
@@ -34,7 +39,7 @@ export function GentsPage() {
       gridHeading="Gents pieces"
       gridHidePrice
       gridShowContactActions
-      filters={["All", "Rings", "Chains", "Bracelets", "Cufflinks"]}
+      filters={filters}
     />
   );
 }
