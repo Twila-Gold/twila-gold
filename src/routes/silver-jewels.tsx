@@ -68,7 +68,6 @@ export function SilverJewelsPage() {
       <section className="bg-[var(--cream)]">
         <div className="mx-auto max-w-[1400px] px-5 lg:px-10 py-16 md:py-20">
           <div className="max-w-3xl">
-            <div className="text-[11px] tracking-[0.35em] uppercase text-gold mb-3">Products</div>
             <h2 className="font-serif text-4xl md:text-5xl text-[var(--navy-deep)] leading-tight">
               Discover Silver Collections
             </h2>
