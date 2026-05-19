@@ -88,8 +88,7 @@ export function GoldJewelsPage() {
               Discover Gold Collections
             </h2>
             <p className="mt-4 text-[var(--navy)]/75 leading-relaxed">
-              Everybody has a unique style story. Explore signature gold designs crafted for daily elegance,
-              festive statements, and heirloom moments.
+              Crafted gold for signature everyday luxury
             </p>
           </div>
 
