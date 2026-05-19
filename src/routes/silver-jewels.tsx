@@ -73,7 +73,7 @@ export function SilverJewelsPage() {
               Discover Silver Collections
             </h2>
             <p className="mt-4 text-[var(--navy)]/75 leading-relaxed">
-              Clean everyday silhouettes in 925 silver, designed for stacking, gifting, and effortless daily wear.
+              Crafted for Everyday Elegance
             </p>
           </div>
 

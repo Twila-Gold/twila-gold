@@ -267,7 +267,7 @@ export const BANNERS: Record<string, { title: string; subtitle: string; image: s
   },
   silver: {
     title: "Silver Jewels",
-    subtitle: "Everyday elegance in sterling 925.",
+    subtitle: "Everyday Silver Elegance",
     image: silverImg(0),
     crumbs: ["Home", "Silver Jewels"],
   },
