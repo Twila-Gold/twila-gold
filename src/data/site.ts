@@ -60,17 +60,14 @@ export const diamondImg = (i: number) => DIAMOND_IMAGES[i % DIAMOND_IMAGES.lengt
 
 /** Platinum collection imagery — used for banners, products, and carousels site-wide. */
 export const PLATINUM_IMAGES = [
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779111984/closeup-shot-female-pink-dress-wearing-beautiful-silver-brac_ko7exx.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779111984/beautiful-engagement-ring-with-diamonds_23-2149509243_rv8kaw.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779111984/shiny-jewelry-crystal-platinum-gold-gemstone-drops-generated_hsyaes.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779111984/still-life-aesthetic-earrings_23-2149649141_qovyh5.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779111983/luxury-shine-diamonds-digital-art_23-2151695079_hcx5lg.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779111983/shiny-gemstones-adorn-elegant-gold-jewelry-pieces-generated-_gbxdki.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779111982/luxury-jewellery-display_23-2151921942_qzcgjd.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779111982/closeup-shot-female-wearing-beautiful-silver-ring_181624-277_pipu2p.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779111982/top-view-sterling-silver-earrings-with-diamonds-with-studs-b_hdtic4.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779111982/closeup-shot-female-wearing-beautiful-rings-both-hands-showi_iqpwa4.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779111982/closeup-shot-female-wearing-beautiful-silver-necklace-with-p_uirbbe.jpg",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779170256/1_zqoqmw.jpg",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779170256/2_sfxdvg.webp",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779170256/3_bkwok6.webp",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779170256/4_voilqs.webp",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779170256/5_uv4klq.jpg",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779170256/6_l3evic.jpg",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779170257/7_y45geb.webp",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779170257/8_bgdw8u.jpg",
 ] as const;
 
 export const platinumImg = (i: number) => PLATINUM_IMAGES[i % PLATINUM_IMAGES.length];
@@ -194,12 +191,14 @@ export const PRODUCTS: Record<string, Product[]> = {
     ["Marquise Band", "Band · 18K", 96400],
   ]),
   platinum: buildList("plat", platImgs, [
-    ["Axis Band", "Band · PT950", 84200, true],
-    ["Norra Solitaire", "Ring · PT950", 312000],
-    ["Helix Bracelet", "Bracelet · PT950", 198400],
-    ["Polaris Pendant", "Pendant · PT950", 76800],
-    ["Vega Studs", "Studs · PT950", 62400, true],
-    ["Orbit Chain", "Chain · PT950", 142500],
+    ["Lunex", "Bracelet · PT950", 84200, true],
+    ["Aurelle", "Bangles · PT950", 312000],
+    ["Virelle", "Bangles · PT950", 198400],
+    ["Elara", "Pendant · PT950", 76800],
+    ["Celestia", "Necklace · PT950", 62400, true],
+    ["Aurevia", "Necklace · PT950", 142500],
+    ["Elyan", "Ring · PT950", 142500],
+    ["Orvian", "Ring · PT950", 142500],
   ]),
   silver: buildList("silver", silverImgs, [
     ["Silver Stag", "Pendant · 925", 4800, true],

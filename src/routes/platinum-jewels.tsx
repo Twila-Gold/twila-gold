@@ -1,7 +1,12 @@
 import { CategoryPage } from "@/components/site/CategoryPage";
-import { HERO_VIDEO_SECOND, platinumImg } from "@/data/site";
+import { HERO_VIDEO_SECOND, PRODUCTS, platinumImg } from "@/data/site";
 
 export function PlatinumJewelsPage() {
+  const filters = [
+    "All",
+    ...new Set(PRODUCTS.platinum.map((p) => p.tag.split("·")[0].trim())),
+  ];
+
   return (
     <CategoryPage
       dataKey="platinum"
@@ -24,14 +29,7 @@ export function PlatinumJewelsPage() {
       gridEyebrow="The collection"
       gridHeading="Platinum pieces"
       gridVariant="catalog"
-      gridFilterMap={{
-        Bands: "band",
-        Solitaires: "ring",
-        Bracelets: "bracelet",
-        Chains: "chain",
-        Studs: "studs",
-      }}
-      filters={["All", "Bands", "Solitaires", "Bracelets", "Chains", "Studs"]}
+      filters={filters}
     />
   );
 }
