@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Twitter } from "lucide-react";
+import { Instagram, Facebook, Mail, MapPin, Phone } from "lucide-react";
 import twilaLogo from "@/assets/Twila-Logo.png";
 
 export function Footer() {
@@ -37,11 +37,17 @@ export function Footer() {
         <div>
           <h4 className="text-xs tracking-[0.3em] uppercase text-white/70 mb-4">Contact</h4>
           <ul className="space-y-2 text-sm text-white/75">
-            <li>+91 80 7540 3921</li>
-            <li>
-              Twila Gold and Diamonds LLP
-              <br />
-              Mavoor road Kerala
+            <li className="flex items-start gap-2">
+              <Phone size={16} className="mt-0.5 text-gold" />
+              <span>+91 80 7540 3921</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <MapPin size={16} className="mt-0.5 text-gold" />
+              <span>
+                Twila Gold and Diamonds LLP
+                <br />
+                Mavoor road Kerala
+              </span>
             </li>
           </ul>
           <div className="flex gap-3 mt-5 text-white/70">
@@ -62,6 +68,13 @@ export function Footer() {
               aria-label="Facebook"
             >
               <Facebook size={18} />
+            </a>
+            <a
+              href="mailto:twilagoldanddiamonds@gmail.com"
+              className="hover:text-gold transition"
+              aria-label="Email"
+            >
+              <Mail size={18} />
             </a>
           </div>
         </div>
