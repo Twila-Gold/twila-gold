@@ -3,15 +3,9 @@ import { useMemo, useState } from "react";
 import { TrustStrip } from "@/components/site/TrustStrip";
 import { BANNERS, HERO_VIDEO_SECOND, PRODUCTS } from "@/data/site";
 
-const filters = ["All", "Hoops", "Pendants", "Rings", "Cuffs", "Chains"];
 
-const filterToTag: Record<string, string> = {
-  Hoops: "hoops",
-  Pendants: "pendant",
-  Rings: "ring",
-  Cuffs: "cuff",
-  Chains: "chain",
-};
+// Use only categories present in the silver dataset
+const filters = ["All", "Pendant", "Waist Chain", "Anklet", "Ring", "Chain"];
 
 export function SilverJewelsPage() {
   const banner = BANNERS.silver;
@@ -20,8 +14,11 @@ export function SilverJewelsPage() {
 
   const filteredProducts = useMemo(() => {
     if (activeFilter === "All") return products;
-    const needle = filterToTag[activeFilter];
-    return products.filter((p) => p.tag.toLowerCase().includes(needle));
+    // Match only the product type (before '·'), case-insensitive
+    return products.filter((p) => {
+      const type = p.tag.split("·")[0].trim().toLowerCase();
+      return type === activeFilter.toLowerCase();
+    });
   }, [activeFilter, products]);
 
   return (

@@ -77,14 +77,15 @@ export const platinumImg = (i: number) => PLATINUM_IMAGES[i % PLATINUM_IMAGES.le
 
 /** Silver collection imagery — used for banners, products, and carousels site-wide. */
 export const SILVER_IMAGES = [
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779112218/beautiful-engagement-ring-with-diamonds-1-1_blzdrh.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779112218/side-view-silver-bracelets-with-diamonds-black-wall_tgrmhe.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779112217/luxury-jewellery-display_hghmbm.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779112216/vertical-closeup-shot-female-wearing-silver-necklace-with-be_zljve4.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779112216/bust-showcase-jewelry-display-necklace-pendant-jewelry-lifes_kg8mnv.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779112211/luxury-shine-diamonds-digital-art-3_euml8c.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779112211/luxury-shine-diamonds-digital-art_vwlnf1.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779112210/luxury-shine-diamonds-digital-art-2-1_qtnboy.jpg",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779131281/1_amcopg.webp",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779131269/2_tevdqa.jpg",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779131268/3_yijyce.webp",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779131279/4_p8cpqx.webp",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779131866/5_ywwg4b.png",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779131287/6_vvizur.png",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779131287/7_bmh8te.png",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779131269/8_fhzqxv.webp",
+
 ] as const;
 
 export const silverImg = (i: number) => SILVER_IMAGES[i % SILVER_IMAGES.length];
@@ -201,12 +202,14 @@ export const PRODUCTS: Record<string, Product[]> = {
     ["Orbit Chain", "Chain · PT950", 142500],
   ]),
   silver: buildList("silver", silverImgs, [
-    ["Luna Hoops", "Hoops · 925", 4800, true],
-    ["Aria Pendant", "Pendant · 925", 3200],
-    ["Mara Cuff", "Cuff · 925", 6700],
-    ["Iris Studs", "Studs · 925", 2400],
-    ["Nova Ring", "Ring · 925", 3900, true],
-    ["Sable Chain", "Chain · 925", 5400],
+    ["Silver Stag", "Pendant · 925", 4800, true],
+    ["Silver Love", "Waist Chain · 925", 3200],
+    ["Crimson Charm", "Anklet · 925", 6700],
+    ["Scarlet", "Anklet · 925", 2400],
+    ["Celeste", "Ring · 925", 3900, true],
+    ["Veyron", "Chain · 925", 5400],
+    ["Zenith", "Chain · 925", 5400],
+    ["Ethereal", "Waist Chain · 925", 5400],
   ]),
   gents: buildList("gents", gentsImgs, [
     ["Kingsman Signet", "Ring · 18K", 124500, true],
@@ -233,6 +236,15 @@ export const PRODUCTS: Record<string, Product[]> = {
     ["Bunny Ring", "Ring · 925", 1900],
   ]),
 };
+
+// Silver categories for filtering on the silver page
+export const SILVER_CATEGORIES = [
+  "Pendant",
+  "Waist Chain",
+  "Anklet",
+  "Ring",
+  "Chain",
+];
 
 export const BANNERS: Record<string, { title: string; subtitle: string; image: string; crumbs: string[] }> = {
   gold: {
