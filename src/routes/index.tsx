@@ -4,7 +4,7 @@ import { ChevronRight, Ear, Gem, Sparkles, X } from "lucide-react";
 import { ProductGlassGrid } from "@/components/site/ProductGlassGrid";
 import { TrustStrip } from "@/components/site/TrustStrip";
 import { WhyChooseTwila } from "@/components/site/WhyChooseTwila";
-import { diamondImg, goldImg, HERO_VIDEO, HERO_VIDEO_FALLBACK, HERO_VIDEO_SECOND, ladiesImg, PRODUCTS } from "@/data/site";
+import { diamondImg, HERO_VIDEO, HERO_VIDEO_FALLBACK, HERO_VIDEO_SECOND, ladiesImg, PRODUCTS } from "@/data/site";
 import { useReveal } from "@/hooks/use-reveal";
 
 export function HomePage() {
@@ -13,12 +13,12 @@ export function HomePage() {
   const galleryItems = [
     {
       title: "Bold Elegance",
-      image: diamondImg(0),
+      image: "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779101568/ring_pve2na.png",
       alt: "Close-up of a gemstone ring",
     },
     {
       title: "Timeless Beauty",
-      image: goldImg(0),
+      image: "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779101566/chain_bsqwse.png",
       alt: "Traditional gold necklace",
     },
     {
