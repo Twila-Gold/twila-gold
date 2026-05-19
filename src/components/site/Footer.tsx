@@ -16,7 +16,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-xs tracking-[0.3em] uppercase text-white/70 mb-4">Navigation</h4>
+          <h4 className="text-sm font-bold tracking-[0.3em] uppercase text-white/70 mb-4">Navigation</h4>
           <ul className="space-y-2 text-sm text-white/75">
             <li><Link to="/" className="hover:text-gold">Home</Link></li>
             <li><Link to="/shop" className="hover:text-gold">Shop</Link></li>
@@ -26,7 +26,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-xs tracking-[0.3em] uppercase text-white/70 mb-4">Services</h4>
+          <h4 className="text-sm font-bold tracking-[0.3em] uppercase text-white/70 mb-4">Services</h4>
           <ul className="space-y-2 text-sm text-white/75">
             <li><Link to="" className="hover:text-gold">Polish</Link></li>
             <li><Link to="" className="hover:text-gold">Stone and Settings</Link></li>
@@ -35,7 +35,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-xs tracking-[0.3em] uppercase text-white/70 mb-4">Contact</h4>
+          <h4 className="text-sm font-bold tracking-[0.3em] uppercase text-white/70 mb-4">Contact</h4>
           <ul className="space-y-2 text-sm text-white/75">
             <li className="flex items-start gap-2">
               <Phone size={16} className="mt-0.5 text-gold" />
