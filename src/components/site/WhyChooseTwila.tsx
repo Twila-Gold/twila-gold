@@ -25,8 +25,8 @@ export function WhyChooseTwila() {
   return (
     <section ref={ref} className="mx-auto max-w-[1400px] px-5 lg:px-10 py-20">
       <div className="text-center mb-12 reveal">
-        <div className="text-[11px] tracking-[0.35em] uppercase text-gold mb-3">Why Choose TWILA</div>
-        <h2 className="font-serif text-4xl md:text-5xl text-[var(--navy-deep)]">Made To Be Kept</h2>
+        <div className="text-[11px] tracking-[0.35em] uppercase text-gold mb-3">Made To Be Kept</div>
+        <h2 className="font-serif text-4xl md:text-5xl text-[var(--navy-deep)]">Why Choose TWILA</h2>
         <p className="mt-3 text-sm md:text-base text-[var(--navy)]/70 max-w-2xl mx-auto">
           A modern house of fine jewellery built on craft discipline, transparent sourcing, and enduring service.
         </p>
