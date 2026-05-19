@@ -35,7 +35,7 @@ export const GOLD_IMAGES = [
   "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779106203/valentines-day-still-life-design_nultgk.webp",
   "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779106199/akali-m5-s4-bg-a_npwny8.webp",
   "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779107772/earrings.webp",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779106200/Eaarings-01_bjqhkq.webp",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779178532/ChatGPT_Image_May_19_2026_01_45_04_PM_gkpcly.png",
   "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779106200/ChatGPT-Image-Apr-16-2026-01_47_54-PM_brrtbj.webp",
   "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779106199/ChatGPT-Image-Apr-16-2026-01_41_28-PM_m5qgqn.webp",
   "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779106199/ChatGPT-Image-Apr-16-2026-01_13_47-PM_kpt37w.webp",
