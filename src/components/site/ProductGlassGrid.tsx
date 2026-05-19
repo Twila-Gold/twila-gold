@@ -46,38 +46,38 @@ export function ProductGlassGrid({
   return (
     <section ref={ref} className="mx-auto max-w-[1400px] px-5 lg:px-10 py-20">
       {(eyebrow || heading) && (
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 reveal">
+        <div className="mb-6 reveal">
           <div className="max-w-2xl">
             {eyebrow && (
               <div className="text-[11px] tracking-[0.35em] uppercase text-gold mb-3">{eyebrow}</div>
             )}
             {heading && <h2 className="font-serif text-4xl md:text-5xl">{heading}</h2>}
           </div>
-          {filters && (
-              <div className={variant === "catalog" ? "flex flex-wrap gap-2 md:gap-3" : "glass-light glass-gold-border rounded-full p-1.5 inline-flex flex-wrap gap-1"}>
-                {filters.map((f, i) => (
-                <button
-                  key={f}
-                    onClick={() => setActiveFilter(f)}
-                      className={
-                        variant === "catalog"
-                          ? `px-4 md:px-5 py-2 rounded-full text-xs tracking-[0.22em] uppercase border transition ${
-                              activeFilter === f
-                                ? "bg-navy text-white border-navy"
-                                : "bg-white text-[var(--navy)]/75 border-black/10 hover:border-[var(--gold)] hover:text-[var(--navy-deep)]"
-                            }`
-                          : `px-4 py-1.5 text-xs uppercase tracking-[0.2em] rounded-full transition ${
-                              activeFilter === f
-                                ? "bg-navy text-white"
-                                : "text-[var(--navy)]/75 hover:text-[var(--navy-deep)]"
-                            }`
-                      }
-                >
-                  {f}
-                </button>
-              ))}
-            </div>
-          )}
+        </div>
+      )}
+      {filters && (
+        <div className={`mb-10 reveal ${variant === "catalog" ? "flex flex-wrap gap-2 md:gap-3" : " rounded p-1.5 inline-flex flex-wrap gap-1"}`}>
+          {filters.map((f) => (
+            <button
+              key={f}
+              onClick={() => setActiveFilter(f)}
+              className={
+                variant === "catalog"
+                  ? `px-4 md:px-5 py-2 rounded-full text-xs tracking-[0.22em] uppercase border transition ${
+                      activeFilter === f
+                        ? "bg-navy text-white border-navy border-black/10"
+                        : "bg-white text-[var(--navy)]/75 border-black/10 hover:border-[var(--gold)] hover:text-[var(--navy-deep)]"
+                    }`
+                  : `px-4 py-1.5 text-xs border uppercase tracking-[0.2em] rounded-full transition ${
+                      activeFilter === f
+                        ? "bg-navy text-white"
+                        : "text-[var(--navy)]/75 hover:text-[var(--navy-deep)]"
+                    }`
+              }
+            >
+              {f}
+            </button>
+          ))}
         </div>
       )}
 
