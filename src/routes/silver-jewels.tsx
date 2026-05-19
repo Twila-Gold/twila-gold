@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import { useMemo, useState } from "react";
 import { TrustStrip } from "@/components/site/TrustStrip";
-import { BANNERS, HERO_VIDEO_SECOND, PRODUCTS } from "@/data/site";
+import { BANNERS, PRODUCTS } from "@/data/site";
+
+const SILVER_BANNER_VIDEO =
+  "https://res.cloudinary.com/dbntg4yrs/video/upload/TWILA_06_xlly4b.mp4";
 
 
 // Use only categories present in the silver dataset
@@ -40,7 +43,7 @@ export function SilverJewelsPage() {
           preload="metadata"
           poster={banner.image}
         >
-          <source src={HERO_VIDEO_SECOND} type="video/mp4" />
+          <source src={SILVER_BANNER_VIDEO} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-navy/55 via-navy/35 to-navy/75" />
         <div className="absolute inset-x-0 bottom-0 z-10 mx-auto max-w-[1400px] px-5 lg:px-10 pb-10">

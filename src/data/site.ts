@@ -261,7 +261,7 @@ export const BANNERS: Record<string, { title: string; subtitle: string; image: s
   },
   platinum: {
     title: "Platinum Jewels",
-    subtitle: "Rare metal, refined silhouettes — engineered to last.",
+    subtitle: "Timeless silhouettes, expertly crafted.",
     image: platinumImg(0),
     crumbs: ["Home", "Platinum Jewels"],
   },

@@ -1,12 +1,15 @@
 import { CategoryPage } from "@/components/site/CategoryPage";
-import { diamondImg, HERO_VIDEO } from "@/data/site";
+import { diamondImg } from "@/data/site";
+
+const DIAMOND_BANNER_VIDEO =
+  "https://res.cloudinary.com/dbntg4yrs/video/upload/TWILA_02_qvi1vi.mp4";
 
 export function DiamondJewelsPage() {
   return (
     <CategoryPage
       dataKey="diamond"
-      bannerVideo={HERO_VIDEO}
-      bentoEyebrow="Atelier · Diamond"
+      bannerVideo={DIAMOND_BANNER_VIDEO}
+      disableCarousel
       bentoHeading="Brilliance, certified"
       bentoTiles={[
         { type: "image", title: "Solitaire Studio", image: diamondImg(0), body: "Bespoke solitaires from 0.30ct to 3ct.", span: "md:col-span-2 md:row-span-2" },
@@ -17,10 +20,6 @@ export function DiamondJewelsPage() {
         { type: "image", title: "Everyday Sparkle", image: diamondImg(4), body: "Clean, versatile diamond pieces for gifting and daily wear." },
         { type: "stat", stat: "18K", title: "Setting standard" },
       ]}
-      carouselEyebrow="Diamond journeys"
-      carouselTitle="A study in light"
-      carouselCta="See all diamond edits"
-      carouselHref="/diamond-jewels"
       gridEyebrow="The collection"
       gridHeading="Diamond pieces"
       gridVariant="catalog"

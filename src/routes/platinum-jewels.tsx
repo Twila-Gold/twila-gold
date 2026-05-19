@@ -1,5 +1,8 @@
 import { CategoryPage } from "@/components/site/CategoryPage";
-import { HERO_VIDEO_SECOND, PRODUCTS, platinumImg } from "@/data/site";
+import { PRODUCTS, platinumImg } from "@/data/site";
+
+const PLATINUM_BANNER_VIDEO =
+  "https://res.cloudinary.com/dbntg4yrs/video/upload/TWILA_05_lir7w2.mp4";
 
 export function PlatinumJewelsPage() {
   const filters = [
@@ -10,9 +13,9 @@ export function PlatinumJewelsPage() {
   return (
     <CategoryPage
       dataKey="platinum"
-      bannerVideo={HERO_VIDEO_SECOND}
-      bentoEyebrow="Atelier · Platinum"
-      bentoHeading="Rare metal, refined silhouettes"
+      bannerVideo={PLATINUM_BANNER_VIDEO}
+      disableCarousel
+      bentoHeading="Enduring style with refined artistry."
       bentoTiles={[
         { type: "image", title: "Couple Bands", image: platinumImg(0), body: "30+ silhouettes, engraved to order.", span: "md:col-span-2 md:row-span-2" },
         { type: "stat", stat: "PT950", title: "Pure platinum", body: "Naturally white, hypoallergenic." },
@@ -22,10 +25,6 @@ export function PlatinumJewelsPage() {
         { type: "image", title: "Architectural", image: platinumImg(4), body: "Sculptural profiles with enduring finish." },
         { type: "stat", stat: "30×", title: "Rarer than gold" },
       ]}
-      carouselEyebrow="Platinum edits"
-      carouselTitle="Rare finishes"
-      carouselCta="See platinum edits"
-      carouselHref="/platinum-jewels"
       gridEyebrow="The collection"
       gridHeading="Platinum pieces"
       gridVariant="catalog"
