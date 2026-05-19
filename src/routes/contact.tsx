@@ -24,10 +24,10 @@ export function ContactPage() {
         >
           <div className="text-[11px] tracking-[0.35em] uppercase text-gold mb-3">Write to us</div>
           <h2 className="font-serif text-3xl md:text-4xl text-[var(--navy-deep)]">
-            Speak with an advisor
+            Connect With Our Jewellery Experts
           </h2>
           <p className="text-[var(--navy)]/70 mt-3 text-sm">
-            Tell us a little about what you're looking for. We typically respond within one business day.
+            Share your requirements with us and our team will assist you with the perfect selection. We usually respond within one business day.
           </p>
 
           {sent ? (
@@ -52,7 +52,7 @@ export function ContactPage() {
                 </Field>
               </div>
               <Field label="Message">
-                <textarea required rows={5} className="ti resize-none" placeholder="Tell us a little about what you're looking for…" />
+                <textarea required rows={2} className="ti resize-none" placeholder="Tell us a little about what you're looking for…" />
               </Field>
               <button
                 type="submit"
@@ -75,25 +75,31 @@ export function ContactPage() {
             />
             <div className="p-6">
               <div className="text-[11px] tracking-[0.3em] uppercase text-gold mb-2">The Boutique</div>
-              <h3 className="font-serif text-2xl text-[var(--navy-deep)]">Bengaluru Flagship</h3>
               <ul className="mt-4 space-y-3 text-sm text-[var(--navy)]/80">
-                <li className="flex items-start gap-3"><MapPin size={16} className="text-gold mt-0.5" /> 14, Lavelle Road · Bengaluru 560001</li>
-                <li className="flex items-start gap-3"><Phone size={16} className="text-gold mt-0.5" /> +91 80 0000 0000</li>
-                <li className="flex items-start gap-3"><Mail size={16} className="text-gold mt-0.5" /> concierge@twila.com</li>
+                <li className="flex items-start gap-3"><MapPin size={16} className="text-gold mt-0.5" /> Twila Gold and Diamonds LLP
+Mavoor road Kerala</li>
+                <li className="flex items-start gap-3"><Phone size={16} className="text-gold mt-0.5" /> +91 80 7540 3921</li>
+                <li className="flex items-start gap-3"><Mail size={16} className="text-gold mt-0.5" /> twilagoldanddiamonds@gmail.com</li>
               </ul>
-            </div>
-          </div>
-
-          <div className="reveal glass-light glass-gold-border rounded-2xl p-6">
-            <div className="text-[11px] tracking-[0.3em] uppercase text-gold mb-2">Hours</div>
-            <h3 className="font-serif text-xl text-[var(--navy-deep)]">By appointment & walk-in</h3>
-            <div className="mt-3 text-sm text-[var(--navy)]/75 space-y-1">
-              <div>Mon – Sat · 11:00 am – 8:00 pm</div>
-              <div>Sun · By appointment only</div>
             </div>
           </div>
         </div>
       </section>
+
+      <div className="reveal px-5 lg:px-10 pb-20 mx-auto max-w-[1400px]">
+        <div className="glass-light glass-gold-border rounded-2xl overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d244.56444692791635!2d75.78355648247405!3d11.25911871893334!3m2!1i1024!2i768!4f13.1!2m1!1s129%20Gudalur%20-%20Nilumbur%20-%20Kozhikode%20Rd%2C%20Kozhikode%2C%20Kerala!5e0!3m2!1sen!2sus!4v1779193960200!5m2!1sen!2sus"
+            width="100%"
+            height="450"
+            style={{ border: 0, display: "block" }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Twila Gold and Diamonds location"
+          />
+        </div>
+      </div>
 
       <style>{`
         .ti {
