@@ -24,14 +24,7 @@ export function DiamondJewelsPage() {
       gridEyebrow="The collection"
       gridHeading="Diamond pieces"
       gridVariant="catalog"
-      gridFilterMap={{
-        Solitaires: "ring",
-        Studs: "studs",
-        Pendants: "pendant",
-        Bracelets: "bracelet",
-        Bands: "band",
-      }}
-      filters={["All", "Solitaires", "Studs", "Pendants", "Bracelets", "Bands"]}
+      filters={["All", "Bracelet", "Earrings", "Locket", "Necklace", "Ring", "Nosepin"]}
     />
   );
 }

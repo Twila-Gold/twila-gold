@@ -47,13 +47,14 @@ export const goldImg = (i: number) => GOLD_IMAGES[i % GOLD_IMAGES.length];
 
 /** Diamond collection imagery — used for banners, products, and carousels site-wide. */
 export const DIAMOND_IMAGES = [
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779108172/Gemini_Generated_Image_i7s2zvi7s2zvi7s2-e1776613352693_udvlyg.png",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779108172/closeup-shot-female-pink-dress-wearing-beautiful-silver-brac_tdpoyr.jpg",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779108170/ChatGPT-Image-Apr-16-2026-08_51_01-PM_eqsumw.png",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779108170/ChatGPT-Image-Apr-16-2026-08_47_18-PM_sxd5ca.png",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779108170/Gemini_Generated_Image_kffaw2kffaw2kffa-e1776613433104_jhqrwg.png",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779108169/Gemini_Generated_Image_hck9cehck9cehck9-e1776613382527_fgkxth.png",
-  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779108170/Gemini_Generated_Image_g2ucq9g2ucq9g2uc-e1776613408730_mr5opt.png",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779174481/1_tekt4m.webp",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779174481/2_al5kfx.webp",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779174481/3_kussld.webp",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779174481/4_jmndqq.webp",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779174481/5_x8zp77.jpg",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779174482/6_qafr8t.webp",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779174480/7_szfbnr.jpg",
+  "https://res.cloudinary.com/dbntg4yrs/image/upload/v1779174502/8_sumaul.png",
 ] as const;
 
 export const diamondImg = (i: number) => DIAMOND_IMAGES[i % DIAMOND_IMAGES.length];
@@ -181,14 +182,14 @@ export const PRODUCTS: Record<string, Product[]> = {
     ["Nooré", "Anklets · 22K", 21800],
   ]),
   diamond: buildList("dia", diamondImgs, [
-    ["Solitaire Aria", "Ring · 18K + VVS1", 248000, true],
-    ["Halo Eternal", "Ring · 18K", 196500],
-    ["Cascade Necklace", "Necklace · 18K", 412000],
-    ["Brilliance Studs", "Studs · 18K", 89500],
-    ["Lumière Pendant", "Pendant · 18K", 134500, true],
-    ["Reverie Bracelet", "Bracelet · 18K", 178200],
-    ["Étoile Earrings", "Earrings · 18K", 152000],
-    ["Marquise Band", "Band · 18K", 96400],
+    ["Stellis", "Bracelet · 18K + VVS1", 248000, true],
+    ["Zirelle", "Earrings · 18K", 196500],
+    ["Diora", "Earrings · 18K", 412000],
+    ["Eterna Spark", "Locket · 18K", 89500],
+    ["Verdant Grace", "Necklace · 18K", 134500, true],
+    ["Pure Aura", "Ring · 18K", 178200],
+    ["Lumi Petal", "Nosepin · 18K", 152000],
+    ["Eclipse Shine", "Necklace · 18K", 96400],
   ]),
   platinum: buildList("plat", platImgs, [
     ["Lunex", "Bracelet · PT950", 84200, true],
