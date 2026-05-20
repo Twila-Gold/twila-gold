@@ -25,7 +25,6 @@ export function PlatinumJewelsPage() {
         { type: "image", title: "Architectural", image: platinumImg(4), body: "Sculptural profiles with enduring finish." },
         { type: "stat", stat: "30×", title: "Rarer than gold" },
       ]}
-      gridEyebrow="The collection"
       gridHeading="Platinum pieces"
       gridVariant="catalog"
       filters={filters}
