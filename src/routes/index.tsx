@@ -284,7 +284,7 @@ export function HomePage() {
 
       <ProductGlassGrid
         heading="Featured pieces"
-        products={[...PRODUCTS.diamond.slice(0, 4), ...PRODUCTS.gold.slice(0, 4)]}
+        products={[...PRODUCTS.diamond.slice(1, 5), ...PRODUCTS.gold.slice(0, 4)]}
         hidePrice
       />
 
