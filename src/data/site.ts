@@ -130,9 +130,9 @@ export const KIDS_IMAGES: string[] = [
 export const kidsImg = (i: number) => KIDS_IMAGES[i % KIDS_IMAGES.length];
 
 export const SHOP_AUDIENCES = [
-  { key: "gents", label: "Gents", href: "/shop/gents", image: gentsImg(0) },
+  { key: "gents", label: "Gents", href: "/shop/gents", image: gentsImg(6) },
   { key: "ladies", label: "Ladies", href: "/shop/ladies", image: ladiesImg(7) },
-  { key: "kids", label: "Kids", href: "/shop/kids", image: u("photo-1561828995-aa79a2db86dd", 600, 600) },
+  { key: "kids", label: "Kids", href: "/shop/kids", image: kidsImg(8) },
 ];
 
 const productImage = (src: string, w = 800, h = 1000) =>
@@ -272,7 +272,7 @@ export const BANNERS: Record<string, { title: string; subtitle: string; image: s
     crumbs: ["Home", "Silver Jewels"],
   },
   shop: {
-    title: "The Boutique",
+    title: "Crafted for Him, Her & Little Ones",
     subtitle: "Curated edits for him, her, and the little ones.",
     image: u("photo-1515562141207-7a88fb7ce338", 2000, 1100),
     crumbs: ["Home", "Shop"],
