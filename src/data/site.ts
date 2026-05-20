@@ -17,6 +17,7 @@ export const NAV = [
   { label: "Silver Jewels", href: "/silver-jewels" },
   { label: "Shop", href: "/shop", hasMenu: true },
   { label: "Contact Us", href: "/contact" },
+  { label: "About Us", href: "/about" },
 ];
 
 export type Product = {
@@ -300,6 +301,12 @@ export const BANNERS: Record<string, { title: string; subtitle: string; image: s
     subtitle: "Visit the boutique or speak with a private advisor.",
     image: platinumImg(6),
     crumbs: ["Home", "Contact"],
+  },
+  about: {
+    title: "About Us",
+    subtitle: "Crafting timeless jewellery with passion and precision.",
+    image: "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=2000&h=900&q=80",
+    crumbs: ["Home", "About Us"],
   },
 };
 

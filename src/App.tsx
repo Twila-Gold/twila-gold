@@ -13,6 +13,7 @@ import { PlatinumJewelsPage } from "@/routes/platinum-jewels";
 import { LadiesPage } from "@/routes/shop.ladies";
 import { GentsPage } from "@/routes/shop.gents";
 import { KidsPage } from "@/routes/shop.kids";
+import { AboutPage } from "@/routes/about";
 
 function AppLayout() {
   return (
@@ -48,6 +49,7 @@ export default function App() {
         <Route element={<AppLayout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/gold-jewels" element={<GoldJewelsPage />} />
           <Route path="/diamond-jewels" element={<DiamondJewelsPage />} />
           <Route path="/platinum-jewels" element={<PlatinumJewelsPage />} />
