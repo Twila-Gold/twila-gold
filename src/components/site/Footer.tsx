@@ -39,7 +39,7 @@ export function Footer() {
           <ul className="space-y-2 text-sm text-white/75">
             <li className="flex items-start gap-2">
               <Phone size={16} className="mt-0.5 text-gold" />
-              <span>+91 80 7540 3921</span>
+              <span>+91 85907 67916</span>
             </li>
             <li className="flex items-start gap-2">
               <MapPin size={16} className="mt-0.5 text-gold" />

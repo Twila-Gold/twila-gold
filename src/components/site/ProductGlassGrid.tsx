@@ -119,7 +119,7 @@ export function ProductGlassGrid({
                   </div>
                   <div className="mt-2 flex flex-wrap gap-2">
                     <a
-                      href="https://wa.me/918075403921"
+                      href="https://wa.me/918590767916"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-3 py-2 rounded-md text-[10px] tracking-[0.22em] uppercase bg-[var(--gold)] text-[var(--navy-deep)] hover:bg-[var(--navy)] hover:text-white transition"
@@ -127,7 +127,7 @@ export function ProductGlassGrid({
                       WhatsApp
                     </a>
                     <a
-                      href="tel:+918075403921"
+                      href="tel:+918590767916"
                       className="inline-flex items-center justify-center px-3 py-2 rounded-md text-[10px] tracking-[0.22em] uppercase border border-black/15 text-[var(--navy)] hover:border-[var(--gold)] hover:text-[var(--navy-deep)] transition"
                     >
                       Call

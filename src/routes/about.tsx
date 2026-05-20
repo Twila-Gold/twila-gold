@@ -22,19 +22,19 @@ export function AboutPage() {
 
       {/* About text */}
       <section className="mx-auto max-w-[1400px] px-5 lg:px-10 py-20">
-        <div className="reveal max-w-2xl mx-auto text-center mb-16">
-          <div className="text-[11px] tracking-[0.35em] uppercase text-gold mb-3">Our Story</div>
-          <h2 className="font-serif text-3xl md:text-4xl text-[var(--navy-deep)] mb-6">About Twila Gold</h2>
-          <p className="text-[var(--navy)]/70 text-sm leading-relaxed mb-4">
+        <div className="reveal max-w-3xl mx-auto text-center mb-16">
+          <div className="text-[12px] tracking-[0.35em] uppercase text-gold mb-3">Our Story</div>
+          <h2 className="font-serif text-4xl md:text-5xl text-[var(--navy-deep)] mb-8">About Twila Gold</h2>
+          <p className="text-[var(--navy)]/70 text-base md:text-lg leading-relaxed mb-5">
             Twila Gold is a modern jewelry brand based in Calicut, specializing in finely crafted gold and diamond
             pieces. Founded with a vision to bring elegance and quality together, we create designs that reflect both
             tradition and contemporary style.
           </p>
-          <p className="text-[var(--navy)]/70 text-sm leading-relaxed mb-4">
+          <p className="text-[var(--navy)]/70 text-base md:text-lg leading-relaxed mb-5">
             Our collections are thoughtfully curated to suit everyday wear as well as special occasions. Each piece is
             crafted with attention to detail, ensuring lasting beauty, comfort, and refinement.
           </p>
-          <p className="text-[var(--navy)]/70 text-sm leading-relaxed">
+          <p className="text-[var(--navy)]/70 text-base md:text-lg leading-relaxed">
             At Twila Gold, we believe jewelry is more than an accessory — it's a reflection of personal style and
             meaningful moments. Our goal is to offer pieces that are simple, elegant, and made to be cherished.
           </p>
@@ -42,8 +42,8 @@ export function AboutPage() {
 
         {/* Collections grid */}
         <div className="reveal" data-delay="100">
-          <div className="text-[11px] tracking-[0.35em] uppercase text-gold text-center mb-3">Gallery</div>
-          <h2 className="font-serif text-3xl md:text-4xl text-[var(--navy-deep)] text-center mb-10">
+          <div className="text-[12px] tracking-[0.35em] uppercase text-gold text-center mb-3">Gallery</div>
+          <h2 className="font-serif text-4xl md:text-5xl text-[var(--navy-deep)] text-center mb-10">
             Our Collections
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
@@ -69,10 +69,10 @@ export function AboutPage() {
       <section className="px-5 lg:px-10 pb-20 mx-auto max-w-[1400px]">
         <div className="reveal glass-light glass-gold-border rounded-2xl p-12 md:p-16 text-center">
           <div className="text-[11px] tracking-[0.35em] uppercase text-gold mb-3">Get in touch</div>
-          <h2 className="font-serif text-3xl md:text-4xl text-[var(--navy-deep)] mb-4">
+          <h2 className="font-serif text-4xl md:text-5xl text-[var(--navy-deep)] mb-4">
             Find Your Perfect Jewelry
           </h2>
-          <p className="text-[var(--navy)]/70 text-sm mb-8 max-w-md mx-auto">
+          <p className="text-[var(--navy)]/70 text-base md:text-lg mb-8 max-w-lg mx-auto">
             Explore our exclusive collections and discover timeless elegance.
           </p>
           <Link

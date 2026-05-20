@@ -11,6 +11,7 @@ export function LadiesPage() {
     <CategoryPage
       dataKey="ladies"
       bannerHeight="70vh"
+      bannerObjectPosition="top"
       disableBento
       disableCarousel
       showcase={{

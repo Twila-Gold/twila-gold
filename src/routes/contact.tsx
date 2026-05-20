@@ -104,7 +104,7 @@ export function ContactPage() {
               <ul className="mt-4 space-y-3 text-sm text-[var(--navy)]/80">
                 <li className="flex items-start gap-3"><MapPin size={16} className="text-gold mt-0.5" /> Twila Gold and Diamonds LLP
 Mavoor road Kerala</li>
-                <li className="flex items-start gap-3"><Phone size={16} className="text-gold mt-0.5" /> +91 80 7540 3921</li>
+                <li className="flex items-start gap-3"><Phone size={16} className="text-gold mt-0.5" /> +91 85907 67916</li>
                 <li className="flex items-start gap-3"><Mail size={16} className="text-gold mt-0.5" /> twilagoldanddiamonds@gmail.com</li>
               </ul>
             </div>

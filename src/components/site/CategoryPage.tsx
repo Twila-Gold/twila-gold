@@ -29,6 +29,7 @@ interface Cfg {
   bannerVideo?: string;
   bannerHeight?: string;
   bannerMobileHeight?: string;
+  bannerObjectPosition?: string;
   disableBento?: boolean;
   disableCarousel?: boolean;
   showcase?: {
@@ -105,6 +106,7 @@ export function CategoryPage(cfg: Cfg) {
           crumbs={banner.crumbs}
           height={cfg.bannerHeight}
           mobileHeight={cfg.bannerMobileHeight}
+          objectPosition={cfg.bannerObjectPosition}
         />
       )}
       {cfg.showcase && cfg.showcase.collageImages && (

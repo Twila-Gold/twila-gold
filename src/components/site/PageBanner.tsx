@@ -8,6 +8,7 @@ interface PageBannerProps {
   crumbs?: string[];
   height?: string;
   mobileHeight?: string;
+  objectPosition?: string;
 }
 
 export function PageBanner({
@@ -17,6 +18,7 @@ export function PageBanner({
   crumbs = [],
   height = "clamp(280px, 42vh, 460px)",
   mobileHeight = "clamp(220px, 34vh, 320px)",
+  objectPosition = "center",
 }: PageBannerProps) {
   const bannerHeightStyle = {
     "--banner-h": height,
@@ -32,6 +34,7 @@ export function PageBanner({
         src={image}
         alt=""
         className="absolute inset-0 w-full h-full object-cover"
+        style={{ objectPosition }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-navy/55 via-navy/35 to-navy/75" />
       <div className="relative h-full mx-auto max-w-[1400px] px-5 lg:px-10 flex flex-col justify-end pb-10">
