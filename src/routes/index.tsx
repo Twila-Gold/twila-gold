@@ -283,7 +283,6 @@ export function HomePage() {
       </section>
 
       <ProductGlassGrid
-        eyebrow="Just in"
         heading="Featured pieces"
         products={[...PRODUCTS.diamond.slice(0, 4), ...PRODUCTS.gold.slice(0, 4)]}
         hidePrice
