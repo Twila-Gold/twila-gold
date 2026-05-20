@@ -35,7 +35,7 @@ export function KidsPage() {
       carouselTitle="The kids' edit"
       carouselCta="See all kids"
       carouselHref="/shop/kids"
-      gridEyebrow="Curated"
+      gridEyebrow=""
       gridHeading="Kids pieces"
       gridHidePrice
       gridShowContactActions

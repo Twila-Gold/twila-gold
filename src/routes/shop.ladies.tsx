@@ -35,7 +35,7 @@ export function LadiesPage() {
       carouselTitle="The ladies' edit"
       carouselCta="See all ladies"
       carouselHref="/shop/ladies"
-      gridEyebrow="Curated"
+      gridEyebrow=""
       gridHeading="Ladies pieces"
       gridHidePrice
       gridShowContactActions

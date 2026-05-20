@@ -35,7 +35,7 @@ export function GentsPage() {
       carouselTitle="The gentleman's edit"
       carouselCta="See all gents"
       carouselHref="/shop/gents"
-      gridEyebrow="Curated"
+      gridEyebrow=""
       gridHeading="Gents pieces"
       gridHidePrice
       gridShowContactActions
