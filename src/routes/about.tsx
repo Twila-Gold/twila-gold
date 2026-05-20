@@ -25,7 +25,14 @@ export function AboutPage() {
 
   return (
     <div ref={ref}>
-      <PageBanner title={b.title} subtitle={b.subtitle} image={b.image} crumbs={b.crumbs} />
+      <PageBanner
+        title={b.title}
+        subtitle={b.subtitle}
+        image={b.image}
+        crumbs={b.crumbs}
+        height="clamp(340px, 70vh, 640px)"
+        mobileHeight="clamp(260px, 42vh, 400px)"
+      />
 
       {/* <div className="mx-auto max-w-[1200px] px-5 lg:px-10"> */}
 
