@@ -2,11 +2,15 @@ import { useState } from "react";
 import { PageBanner } from "@/components/site/PageBanner";
 import { BANNERS, diamondImg } from "@/data/site";
 import { useReveal } from "@/hooks/use-reveal";
-import { Mail, MapPin, Phone, Check } from "lucide-react";
+import { Mail, MapPin, Phone, Check, Loader2 } from "lucide-react";
+
+const SCRIPT_URL = import.meta.env.VITE_APPS_SCRIPT_URL as string;
 
 export function ContactPage() {
   const ref = useReveal<HTMLDivElement>();
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const b = BANNERS.contact;
 
   return (
@@ -17,9 +21,27 @@ export function ContactPage() {
         {/* Form */}
         <form
           className="lg:col-span-3 reveal glass-light glass-gold-border rounded-2xl p-7 md:p-10"
-          onSubmit={(e) => {
+          onSubmit={async (e) => {
             e.preventDefault();
-            setSent(true);
+            setError("");
+            setLoading(true);
+            const fd = new FormData(e.currentTarget);
+            try {
+              await fetch(SCRIPT_URL, {
+                method: "POST",
+                body: JSON.stringify({
+                  name: fd.get("name"),
+                  email: fd.get("email"),
+                  phone: fd.get("phone"),
+                  message: fd.get("message"),
+                }),
+              });
+              setSent(true);
+            } catch {
+              setError("Something went wrong. Please try again or call us directly.");
+            } finally {
+              setLoading(false);
+            }
           }}
         >
           <div className="text-[11px] tracking-[0.35em] uppercase text-gold mb-3">Write to us</div>
@@ -41,24 +63,29 @@ export function ContactPage() {
           ) : (
             <div className="mt-8 grid gap-5">
               <Field label="Your name">
-                <input required className="ti" placeholder="Full name" />
+                <input name="name" required className="ti" placeholder="Full name" />
               </Field>
               <div className="grid md:grid-cols-2 gap-5">
                 <Field label="Email">
-                  <input required type="email" className="ti" placeholder="you@example.com" />
+                  <input name="email" required type="email" className="ti" placeholder="you@example.com" />
                 </Field>
                 <Field label="Phone">
-                  <input className="ti" placeholder="+91 …" />
+                  <input name="phone" className="ti" placeholder="+91 …" />
                 </Field>
               </div>
               <Field label="Message">
-                <textarea required rows={2} className="ti resize-none" placeholder="Tell us a little about what you're looking for…" />
+                <textarea name="message" required rows={2} className="ti resize-none" placeholder="Tell us a little about what you're looking for…" />
               </Field>
+              {error && (
+                <p className="text-sm text-red-500">{error}</p>
+              )}
               <button
                 type="submit"
-                className="self-start mt-2 inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-navy text-white tracking-[0.18em] uppercase text-xs hover:bg-[var(--gold)] hover:text-[var(--navy-deep)] transition"
+                disabled={loading}
+                className="self-start mt-2 inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-navy text-white tracking-[0.18em] uppercase text-xs hover:bg-[var(--gold)] hover:text-[var(--navy-deep)] transition disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Send message
+                {loading && <Loader2 size={14} className="animate-spin" />}
+                {loading ? "Sending…" : "Send message"}
               </button>
             </div>
           )}
