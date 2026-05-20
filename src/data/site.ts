@@ -17,7 +17,6 @@ export const NAV = [
   { label: "Silver Jewels", href: "/silver-jewels" },
   { label: "Shop", href: "/shop", hasMenu: true },
   { label: "Contact Us", href: "/contact" },
-  { label: "About Us", href: "/about" },
 ];
 
 export type Product = {

@@ -101,7 +101,6 @@ export function ContactPage() {
               className="w-full aspect-[4/3] object-cover"
             />
             <div className="p-6">
-              <div className="text-[11px] tracking-[0.3em] uppercase text-gold mb-2">The Boutique</div>
               <ul className="mt-4 space-y-3 text-sm text-[var(--navy)]/80">
                 <li className="flex items-start gap-3"><MapPin size={16} className="text-gold mt-0.5" /> Twila Gold and Diamonds LLP
 Mavoor road Kerala</li>
