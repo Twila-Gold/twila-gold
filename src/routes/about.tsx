@@ -39,15 +39,6 @@ export function AboutPage() {
         {/* ─── Brand Story ─────────────────────────────────────── */}
         <section className="mx-auto max-w-[1200px] px-5 lg:px-10 py-20 lg:py-24">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            {/* Image */}
-            <div className="reveal overflow-hidden rounded-3xl">
-              <img
-                src="https://res.cloudinary.com/dbntg4yrs/image/upload/v1779296961/copy_of_bg_e063h4.png"
-                alt="Twila Gold brand story"
-                loading="lazy"
-                className="w-full aspect-[4/4] object-cover shimmer-img"
-              />
-            </div>
             {/* Text */}
             <div className="reveal" data-delay="100">
               <p className="text-[11px] tracking-[0.38em] uppercase text-gold mb-3">Our Story</p>
@@ -67,6 +58,15 @@ export function AboutPage() {
                 confidence and passed on with pride.
               </p>
             </div>
+            {/* Image */}
+            <div className="reveal overflow-hidden rounded-3xl">
+              <img
+                src="https://res.cloudinary.com/dbntg4yrs/image/upload/v1779296961/copy_of_bg_e063h4.png"
+                alt="Twila Gold brand story"
+                loading="lazy"
+                className="w-full aspect-[4/4] object-cover shimmer-img"
+              />
+            </div>
           </div>
         </section>
 
@@ -77,7 +77,7 @@ export function AboutPage() {
         <section className="bg-navy py-20 lg:py-24">
           <div className="mx-auto max-w-[1200px] px-5 lg:px-10 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Text */}
-            <div className="reveal order-2 lg:order-1">
+            <div className="reveal order-1 lg:order-2">
               <p className="text-[11px] tracking-[0.38em] uppercase text-gold mb-3">What Drives Us</p>
               <h2 className="font-serif text-4xl md:text-5xl text-white leading-tight mb-6">
                 Our Vision
@@ -99,7 +99,7 @@ export function AboutPage() {
               </ul>
             </div>
             {/* Image */}
-            <div className="reveal order-1 lg:order-2" data-delay="100">
+            <div className="reveal order-2 lg:order-1" data-delay="100">
               <div className="overflow-hidden rounded-3xl">
                 <img
                   src="https://res.cloudinary.com/dbntg4yrs/image/upload/v1779297352/copy_of_bb_hlerh2.png"
@@ -118,15 +118,6 @@ export function AboutPage() {
         {/* ─── Craftsmanship ───────────────────────────────────── */}
         <section className="mx-auto max-w-[1200px] px-5 lg:px-10 py-20 lg:py-24">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            {/* Image */}
-            <div className="reveal overflow-hidden rounded-3xl">
-              <img
-                src="https://res.cloudinary.com/dbntg4yrs/image/upload/v1779297013/copy_of_bg2_dlgjli.png"
-                alt="Craftsmanship detail"
-                loading="lazy"
-                className="w-full aspect-[4/4] object-cover shimmer-img"
-              />
-            </div>
             {/* Text */}
             <div className="reveal" data-delay="100">
               <p className="text-[11px] tracking-[0.38em] uppercase text-gold mb-3">The Art of Making</p>
@@ -145,6 +136,15 @@ export function AboutPage() {
                 premium.
               </p>
             </div>
+            {/* Image */}
+            <div className="reveal overflow-hidden rounded-3xl">
+              <img
+                src="https://res.cloudinary.com/dbntg4yrs/image/upload/v1779297013/copy_of_bg2_dlgjli.png"
+                alt="Craftsmanship detail"
+                loading="lazy"
+                className="w-full aspect-[4/4] object-cover shimmer-img"
+              />
+            </div>
           </div>
         </section>
 
@@ -154,8 +154,17 @@ export function AboutPage() {
       <section className="bg-navy py-20">
         <div className="mx-auto max-w-[1200px] px-5 lg:px-10">
           <div className="reveal grid lg:grid-cols-2 gap-10 items-center">
+            {/* Image */}
+            <div className="reveal overflow-hidden rounded-3xl order-2 lg:order-1" data-delay="100" >
+              <img
+                src="https://res.cloudinary.com/dbntg4yrs/image/upload/v1779297878/copy_of_gg_qshrvp.png"
+                alt="Quality commitment"
+                loading="lazy"
+                className="w-full aspect-video object-cover shimmer-img"
+              />
+            </div>
             {/* Text */}
-            <div>
+            <div className="order-1 lg:order-1">
               <p className="text-[11px] tracking-[0.38em] uppercase text-gold mb-3">Our Promise</p>
               <h2 className="font-serif text-4xl md:text-5xl text-white leading-tight mb-6">
                 Quality Commitment
@@ -171,21 +180,12 @@ export function AboutPage() {
                 we prioritize excellence at every stage.
               </p>
             </div>
-            {/* Image */}
-            <div className="reveal overflow-hidden rounded-3xl" data-delay="100">
-              <img
-                src="https://res.cloudinary.com/dbntg4yrs/image/upload/v1779297878/copy_of_gg_qshrvp.png"
-                alt="Quality commitment"
-                loading="lazy"
-                className="w-full aspect-video object-cover shimmer-img"
-              />
-            </div>
           </div>
         </div>
       </section>
 
       {/* ─── Full Width Image ─────────────────────────────────── */}
-      <section className="w-full">
+      <section className="hidden w-full md:block">
         <div className="reveal overflow-hidden">
           <img
             src="https://res.cloudinary.com/dbntg4yrs/image/upload/v1779297736/copy_of_wc_oqirhh.png"
