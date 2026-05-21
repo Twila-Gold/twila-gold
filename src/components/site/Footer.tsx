@@ -50,7 +50,7 @@ export function Footer() {
               </span>
             </li>
           </ul>
-          <div className="flex gap-3 mt-5 text-white/70">
+          <div className="flex gap-3 mt-5 text-white/70 pl-6 md:pl-0">
             <a
               href="https://instagram.com/twilagoldanddiamomds"
               target="_blank"
