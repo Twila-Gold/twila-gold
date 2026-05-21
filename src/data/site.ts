@@ -297,7 +297,7 @@ export const BANNERS: Record<string, { title: string; subtitle: string; image: s
   },
   contact: {
     title: "Contact Us",
-    subtitle: "Visit the boutique or speak with a private advisor.",
+    subtitle: "Your trusted partner is just one message away",
     image: platinumImg(6),
     crumbs: ["Home", "Contact"],
   },
