@@ -98,15 +98,25 @@ export function Header() {
             {NAV.map((item) =>
               item.hasMenu ? (
                 <div key={item.href} className="border-b border-white/5">
-                  <button
-                    className="w-full flex items-center justify-between py-3"
-                    onClick={() => setShopMobile((v) => !v)}
-                  >
-                    <span>{item.label.toUpperCase()}</span>
-                    <ChevronDown size={14} className={`transition ${shopMobile ? "rotate-180" : ""}`} />
-                  </button>
+                  <div className="w-full flex items-center justify-between">
+                    <Link
+                      to={item.href}
+                      className="py-3"
+                      onClick={() => setMobileOpen(false)}
+                      data-active={isActive(item.href)}
+                    >
+                      {item.label.toUpperCase()}
+                    </Link>
+                    <button
+                      className="py-3"
+                      onClick={() => setShopMobile((v) => !v)}
+                      aria-label="Toggle shop categories"
+                    >
+                      <ChevronDown size={14} className={`transition ${shopMobile ? "rotate-180" : ""}`} />
+                    </button>
+                  </div>
                   {shopMobile && (
-                    <div className="pb-4 space-y-3">
+                    <div className="pt-2 pb-4 space-y-3">
                       {SHOP_AUDIENCES.map((a) => (
                         <Link
                           key={a.key}
