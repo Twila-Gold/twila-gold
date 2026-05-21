@@ -16,7 +16,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-sm font-bold tracking-[0.3em] uppercase text-white/70 mb-4">Navigation</h4>
+          <h4 className="text-sm font-bold tracking-[0.3em] uppercase text-gold mb-4">Navigation</h4>
           <ul className="space-y-2 text-sm text-white/75">
             <li><Link to="/" className="hover:text-gold">Home</Link></li>
             <li><Link to="/shop" className="hover:text-gold">Shop</Link></li>
@@ -26,7 +26,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-sm font-bold tracking-[0.3em] uppercase text-white/70 mb-4">Services</h4>
+          <h4 className="text-sm font-bold tracking-[0.3em] uppercase text-gold mb-4">Services</h4>
           <ul className="space-y-2 text-sm text-white/75">
             <li><Link to="" className="hover:text-gold">Polish</Link></li>
             <li><Link to="" className="hover:text-gold">Stone and Settings</Link></li>
@@ -35,14 +35,14 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-sm font-bold tracking-[0.3em] uppercase text-white/70 mb-4">Contact</h4>
+          <h4 className="text-sm font-bold tracking-[0.3em] uppercase text-gold mb-4">Contact</h4>
           <ul className="space-y-2 text-sm text-white/75">
             <li className="flex items-start gap-2">
-              <Phone size={16} className="mt-0.5 text-gold" />
+              <Phone size={16} className="mt-0.5 shrink-0 text-gold" />
               <span>+91 85907 67916</span>
             </li>
             <li className="flex items-start gap-2">
-              <MapPin size={16} className="mt-0.5 text-gold" />
+              <MapPin size={16} className="mt-0.5 shrink-0 text-gold" />
               <span>
                 Twila Gold and Diamonds LLP
                 <br />
@@ -80,7 +80,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="mx-auto max-w-[1400px] px-5 lg:px-10 py-5 text-xs text-white/55 flex flex-col md:flex-row justify-center gap-2">
+        <div className="mx-auto max-w-[1400px] px-5 lg:px-10 py-5 text-xs text-white/55 flex flex-col md:flex-row justify-center gap-2 text-center">
           <span>© 2026 TWILA. All rights reserved.</span>
         </div>
       </div>
