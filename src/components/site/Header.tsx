@@ -102,7 +102,7 @@ export function Header() {
                     className="w-full flex items-center justify-between py-3"
                     onClick={() => setShopMobile((v) => !v)}
                   >
-                    <span>{item.label}</span>
+                    <span>{item.label.toUpperCase()}</span>
                     <ChevronDown size={14} className={`transition ${shopMobile ? "rotate-180" : ""}`} />
                   </button>
                   {shopMobile && (
