@@ -27,7 +27,7 @@ const FLIP_CARDS = [
     title: "Little Charms",
     subtitle: "Tiny Treasures, Endless Smiles",
     backTitle: "Tiny Classics",
-    backDesc: "Delight in the innocence of childhood with Twila Gold & Diamonds' adorable and safe jewelry collection. Each piece is thoughtfully crafted to add a touch of sparkle to your little one's precious moments.",
+    backDesc: "Delight in the innocence of childhood with Twila Gold & Diamonds' adorable and safe jewellery collection. Each piece is thoughtfully crafted to add a touch of sparkle to your little one's precious moments.",
     href: "/shop/kids",
   },
 ];

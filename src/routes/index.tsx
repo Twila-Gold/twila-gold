@@ -41,14 +41,14 @@ export function HomePage() {
   const clarityHighlights = [
     {
       title: "Find Your Shine",
-      body: "Discover finely crafted jewelry designed to reflect your unique style with grace and sophistication.",
+      body: "Discover finely crafted jewellery designed to reflect your unique style with grace and sophistication.",
       image: ladiesImg(7),
       alt: "Close-up of a ring with warm golden reflections",
       to: "/shop/ladies",
     },
     {
       title: "Dreams In Detail",
-      body: "Experience exquisite designs that celebrate beauty, detail, and the art of fine jewelry.",
+      body: "Experience exquisite designs that celebrate beauty, detail, and the art of fine jewellery.",
       image: diamondImg(1),
       alt: "Portrait showcasing diamond jewellery styling",
       to: "/diamond-jewels",
@@ -112,7 +112,7 @@ export function HomePage() {
               <div className="mt-10">
                 <h3 className="font-serif text-3xl md:text-4xl leading-tight">Shine Beyond Ordinary</h3>
                 <p className="mt-4 text-lg leading-relaxed text-black/80 max-w-[46ch]">
-                  Discover the perfect blend of artistry and sophistication with our exclusive jewelry collection.
+                  Discover the perfect blend of artistry and sophistication with our exclusive jewellery collection.
                   Each piece is designed to reflect grace, beauty, and individuality, making every moment you
                   wear it truly unforgettable.
                 </p>
@@ -124,7 +124,7 @@ export function HomePage() {
                 <h3 className="font-serif text-3xl md:text-4xl leading-tight">Pure. Elegant. Timeless.</h3>
                 <p className="mt-4 text-lg leading-relaxed text-black/80 max-w-[46ch]">
                   Our craftsmanship combines tradition with modern aesthetics, ensuring every detail shines with
-                  precision. Whether it&apos;s a statement piece or everyday elegance, we create jewelry that complements
+                  precision. Whether it&apos;s a statement piece or everyday elegance, we create jewellery that complements
                   your unique style.
                 </p>
               </div>
@@ -255,7 +255,7 @@ export function HomePage() {
                 <Gem size={40} strokeWidth={1.2} className="care-icon mx-auto text-[var(--gold)]" />
                 <h3 className="mt-2 font-serif text-xl md:text-2xl leading-snug">Ring Sizer</h3>
                 <p className="mt-2 text-sm md:text-base leading-relaxed text-black/75">
-                  A ring is a crafted piece of jewelry worn on the finger, symbolizing elegance,
+                  A ring is a crafted piece of jewellery worn on the finger, symbolizing elegance,
                   style, and meaningful milestones.
                 </p>
               </div>
@@ -264,7 +264,7 @@ export function HomePage() {
                 <Sparkles size={40} strokeWidth={1.2} className="care-icon mx-auto text-[var(--gold)]" />
                 <h3 className="mt-2 font-serif text-xl md:text-2xl leading-snug">Jewellery Care</h3>
                 <p className="mt-2 text-sm md:text-base leading-relaxed text-black/75">
-                  Proper jewelry care preserves the beauty, durability, and lasting brilliance of your
+                  Proper jewellery care preserves the beauty, durability, and lasting brilliance of your
                   precious pieces.
                 </p>
               </div>
@@ -274,7 +274,7 @@ export function HomePage() {
                 <h3 className="mt-2 font-serif text-xl md:text-2xl leading-snug">Piercing Aftercare</h3>
                 <p className="mt-2 text-sm md:text-base leading-relaxed text-black/75">
                   Proper piercing aftercare ensures safe healing while maintaining the beauty and
-                  integrity of your jewelry.
+                  integrity of your jewellery.
                 </p>
               </div>
             </div>

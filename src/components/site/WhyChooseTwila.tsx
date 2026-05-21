@@ -10,7 +10,7 @@ const reasons = [
   {
     icon: ShieldCheck,
     title: "Authentic & Certified Quality",
-    body: "We use only high-quality, certified materials to create jewelry that reflects true value, purity, and trust you can rely on.",
+    body: "We use only high-quality, certified materials to create jewellery that reflects true value, purity, and trust you can rely on.",
   },
   {
     icon: Sparkles,
