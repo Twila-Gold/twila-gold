@@ -130,8 +130,8 @@ export function ShopHub() {
       <section className="bg-navy text-white">
         <div className="mx-auto max-w-[1400px] px-5 lg:px-10 py-20 lg:py-28">
           <div className="reveal mb-10">
-            <div className="text-[11px] tracking-[0.35em] uppercase text-gold/80 mb-3">From the boutique</div>
-            <h2 className="font-serif text-4xl md:text-5xl">Staff picks &amp; new arrivals</h2>
+            <div className="text-[11px] tracking-[0.35em] uppercase text-gold/80 mb-3">Curated for you</div>
+            <h2 className="font-serif text-4xl md:text-5xl">Discover our exclusives</h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
             {CAROUSEL_ITEMS.shop.map((it, i) => (

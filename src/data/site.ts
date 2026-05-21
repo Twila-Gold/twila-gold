@@ -363,9 +363,9 @@ export const CAROUSEL_ITEMS: Record<string, { title: string; image: string; meta
     { title: "Naming Day", image: silverImg(5), meta: "GIFTS" },
   ],
   shop: [
-    { title: "Staff Picks", image: diamondImg(5), meta: "EDIT · NEW" },
-    { title: "New Arrivals", image: goldImg(7), meta: "JUST IN" },
-    { title: "Gifting", image: silverImg(6), meta: "FROM ₹4K" },
-    { title: "Bridal Atelier", image: ladiesImg(0), meta: "BESPOKE" },
+    { title: "Editors Choice", image: diamondImg(5), meta: "Handpicked Favourites" },
+    { title: "New In", image: goldImg(7), meta: "Freshly added" },
+    { title: "The  Art of Gifting", image: silverImg(6), meta: "Timeless Gestures" },
+    { title: "Bridal Elegance", image: ladiesImg(0), meta: "Crafted to celebrate" },
   ],
 };
