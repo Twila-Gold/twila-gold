@@ -1,13 +1,20 @@
 import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import { hydrateRoot, createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "@/App";
 import "@/styles.css";
 
-createRoot(document.getElementById("root")!).render(
+const rootEl = document.getElementById("root")!;
+const app = (
   <StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 );
+
+if (rootEl.innerHTML.trim()) {
+  hydrateRoot(rootEl, app);
+} else {
+  createRoot(rootEl).render(app);
+}
