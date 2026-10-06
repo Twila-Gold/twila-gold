@@ -81,8 +81,9 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="mx-auto max-w-[1400px] px-5 lg:px-10 py-5 text-xs text-white/55 flex flex-col md:flex-row justify-center md:justify-between items-center gap-2 text-center">
+        <div className="mx-auto max-w-[1400px] px-5 lg:px-10 py-5 text-xs text-white/55 flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 text-center">
           <span>© 2026 TWILA. All rights reserved.</span>
+          <span className="hidden md:inline text-white/30">|</span>
           <span>
             Designed and developed by{" "}
             <a
