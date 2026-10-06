@@ -26,11 +26,12 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-sm font-bold tracking-[0.3em] uppercase text-gold mb-4">Services</h4>
+          <h4 className="text-sm font-bold tracking-[0.3em] uppercase text-gold mb-4">Quick Links</h4>
           <ul className="space-y-2 text-sm text-white/75">
-            <li><Link to="" className="hover:text-gold">Polish</Link></li>
-            <li><Link to="" className="hover:text-gold">Stone and Settings</Link></li>
-            <li><Link to="" className="hover:text-gold">Plating</Link></li>
+            <li><Link to="/gold-jewels" className="hover:text-gold">Gold Jewels</Link></li>
+            <li><Link to="/diamond-jewels" className="hover:text-gold">Diamond Jewels</Link></li>
+            <li><Link to="/platinum-jewels" className="hover:text-gold">Platinum Jewels</Link></li>
+            <li><Link to="/silver-jewels" className="hover:text-gold">Silver Jewels</Link></li>
           </ul>
         </div>
 
@@ -80,8 +81,19 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="mx-auto max-w-[1400px] px-5 lg:px-10 py-5 text-xs text-white/55 flex flex-col md:flex-row justify-center gap-2 text-center">
+        <div className="mx-auto max-w-[1400px] px-5 lg:px-10 py-5 text-xs text-white/55 flex flex-col md:flex-row justify-center md:justify-between items-center gap-2 text-center">
           <span>© 2026 TWILA. All rights reserved.</span>
+          <span>
+            Designed and developed by{" "}
+            <a
+              href="https://www.mentecode.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold/80 hover:text-gold transition"
+            >
+              Mentecode
+            </a>
+          </span>
         </div>
       </div>
     </footer>
